@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="100" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="50" altunitdist="mil" altunit="mil"/>
+<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -89,6 +89,16 @@
 <hole x="150.4696" y="124.46" drill="3.3"/>
 <hole x="150.4696" y="98.3996" drill="3.3"/>
 <hole x="150.4696" y="69.6976" drill="3.3"/>
+<circle x="3.16" y="26.65" radius="2.75" width="0.2" layer="48"/>
+<circle x="76.83" y="26.63" radius="2.75" width="0.2" layer="48"/>
+<circle x="76.81" y="69.64" radius="2.75" width="0.2" layer="48"/>
+<circle x="76.815" y="98.315" radius="2.75" width="0.2" layer="48"/>
+<circle x="76.825" y="124.365" radius="2.75" width="0.2" layer="48"/>
+<circle x="3.085" y="124.41" radius="2.75" width="0.2" layer="48"/>
+<circle x="3.15" y="98.375" radius="2.75" width="0.2" layer="48"/>
+<circle x="150.41" y="124.44" radius="2.75" width="0.2" layer="48"/>
+<circle x="150.43" y="98.355" radius="2.75" width="0.2" layer="48"/>
+<circle x="150.425" y="69.66" radius="2.75" width="0.2" layer="48"/>
 </plain>
 <libraries>
 <library name="sbrio_backplane">
@@ -218,21 +228,24 @@
 <wire x1="3.4036" y1="0.635" x2="3.4036" y2="-0.635" width="0.1524" layer="21"/>
 <wire x1="3.4036" y1="-0.635" x2="1.8796" y2="0" width="0.1524" layer="21"/>
 <wire x1="-8.6106" y1="0.4318" x2="-8.6106" y2="-1.2954" width="0.1524" layer="21"/>
-<wire x1="-8.6106" y1="-4.9276" x2="1.6256" y2="-4.9276" width="0.1524" layer="21"/>
-<wire x1="1.6256" y1="-4.9276" x2="1.6256" y2="-3.7338" width="0.1524" layer="21"/>
+<wire x1="-8.6106" y1="-3.5276" x2="1.6256" y2="-3.5276" width="0.1524" layer="21"/>
+<wire x1="1.6256" y1="-3.5276" x2="1.6256" y2="-2.3338" width="0.1524" layer="21"/>
 <wire x1="1.6256" y1="0.4318" x2="0.6096" y2="0.4318" width="0.1524" layer="21"/>
 <wire x1="-7.62" y1="0.4318" x2="-8.6106" y2="0.4318" width="0.1524" layer="21"/>
 <wire x1="1.6256" y1="-1.2954" x2="1.6256" y2="0.4318" width="0.1524" layer="21"/>
-<wire x1="-8.6106" y1="-3.7338" x2="-8.6106" y2="-4.9276" width="0.1524" layer="21"/>
+<wire x1="-8.6106" y1="-2.3338" x2="-8.6106" y2="-3.5276" width="0.1524" layer="21"/>
 <text x="-7.7724" y="-6.985" size="1.27" layer="21" ratio="6" rot="SR0">&gt;Value</text>
 <wire x1="1.8796" y1="0" x2="3.4036" y2="0.635" width="0.1524" layer="51"/>
 <wire x1="3.4036" y1="0.635" x2="3.4036" y2="-0.635" width="0.1524" layer="51"/>
 <wire x1="3.4036" y1="-0.635" x2="1.8796" y2="0" width="0.1524" layer="51"/>
-<wire x1="-8.6106" y1="-4.9276" x2="1.6256" y2="-4.9276" width="0.1524" layer="51"/>
-<wire x1="1.6256" y1="-4.9276" x2="1.6256" y2="0.4318" width="0.1524" layer="51"/>
+<wire x1="-8.6106" y1="-3.5276" x2="1.6256" y2="-3.5276" width="0.1524" layer="51"/>
+<wire x1="1.6256" y1="-3.5276" x2="1.6256" y2="0.4318" width="0.1524" layer="51"/>
 <wire x1="1.6256" y1="0.4318" x2="-8.6106" y2="0.4318" width="0.1524" layer="51"/>
-<wire x1="-8.6106" y1="0.4318" x2="-8.6106" y2="-4.9276" width="0.1524" layer="51"/>
+<wire x1="-8.6106" y1="0.4318" x2="-8.6106" y2="-3.5276" width="0.1524" layer="51"/>
 <text x="-8.0518" y="1.905" size="1.27" layer="27" ratio="6" rot="SR0">&gt;Name</text>
+<wire x1="-6" y1="-3.6" x2="-6" y2="-5.3" width="0.127" layer="21"/>
+<wire x1="-6" y1="-5.3" x2="-1" y2="-5.3" width="0.127" layer="21"/>
+<wire x1="-1" y1="-5.3" x2="-1" y2="-3.6" width="0.127" layer="21"/>
 </package>
 <package name="PW16">
 <smd name="1" x="-2.921" y="2.275" dx="1.462" dy="0.3548" layer="1"/>
@@ -351,21 +364,24 @@
 <wire x1="3.4036" y1="0.635" x2="3.4036" y2="-0.635" width="0.1524" layer="21"/>
 <wire x1="3.4036" y1="-0.635" x2="1.8796" y2="0" width="0.1524" layer="21"/>
 <wire x1="-10.6172" y1="0.4318" x2="-10.6172" y2="-1.2954" width="0.1524" layer="21"/>
-<wire x1="-10.6172" y1="-4.9276" x2="1.6256" y2="-4.9276" width="0.1524" layer="21"/>
-<wire x1="1.6256" y1="-4.9276" x2="1.6256" y2="-3.7338" width="0.1524" layer="21"/>
+<wire x1="-10.6172" y1="-3.5276" x2="1.6256" y2="-3.5276" width="0.1524" layer="21"/>
+<wire x1="1.6256" y1="-3.5276" x2="1.6256" y2="-2.3338" width="0.1524" layer="21"/>
 <wire x1="1.6256" y1="0.4318" x2="0.6096" y2="0.4318" width="0.1524" layer="21"/>
 <wire x1="-9.6266" y1="0.4318" x2="-10.6172" y2="0.4318" width="0.1524" layer="21"/>
 <wire x1="1.6256" y1="-1.2954" x2="1.6256" y2="0.4318" width="0.1524" layer="21"/>
-<wire x1="-10.6172" y1="-3.7338" x2="-10.6172" y2="-4.9276" width="0.1524" layer="21"/>
+<wire x1="-10.6172" y1="-2.3338" x2="-10.6172" y2="-3.5276" width="0.1524" layer="21"/>
 <text x="-10.033" y="-6.985" size="1.27" layer="21" ratio="6" rot="SR0">&gt;Value</text>
 <wire x1="1.8796" y1="0" x2="3.4036" y2="0.635" width="0.1524" layer="51"/>
 <wire x1="3.4036" y1="0.635" x2="3.4036" y2="-0.635" width="0.1524" layer="51"/>
 <wire x1="3.4036" y1="-0.635" x2="1.8796" y2="0" width="0.1524" layer="51"/>
-<wire x1="-10.6172" y1="-4.9276" x2="1.6256" y2="-4.9276" width="0.1524" layer="51"/>
-<wire x1="1.6256" y1="-4.9276" x2="1.6256" y2="0.4318" width="0.1524" layer="51"/>
+<wire x1="-10.6172" y1="-3.5276" x2="1.6256" y2="-3.5276" width="0.1524" layer="51"/>
+<wire x1="1.6256" y1="-3.5276" x2="1.6256" y2="0.4318" width="0.1524" layer="51"/>
 <wire x1="1.6256" y1="0.4318" x2="-10.6172" y2="0.4318" width="0.1524" layer="51"/>
-<wire x1="-10.6172" y1="0.4318" x2="-10.6172" y2="-4.9276" width="0.1524" layer="51"/>
+<wire x1="-10.6172" y1="0.4318" x2="-10.6172" y2="-3.5276" width="0.1524" layer="51"/>
 <text x="-10.3124" y="1.905" size="1.27" layer="27" ratio="6" rot="SR0">&gt;Name</text>
+<wire x1="-7" y1="-3.6" x2="-7" y2="-5.3" width="0.127" layer="21"/>
+<wire x1="-7" y1="-5.3" x2="-2" y2="-5.3" width="0.127" layer="21"/>
+<wire x1="-2" y1="-5.3" x2="-2" y2="-3.6" width="0.127" layer="21"/>
 </package>
 <package name="RESCAV80P320X160X70-8N">
 <wire x1="-1.6" y1="0.8" x2="1.6" y2="0.8" width="0.127" layer="51"/>
@@ -390,6 +406,31 @@
 <smd name="2" x="-0.4" y="-0.875" dx="0.97" dy="0.53" layer="1" roundness="13" rot="R90"/>
 <smd name="3" x="0.4" y="-0.875" dx="0.97" dy="0.53" layer="1" roundness="13" rot="R90"/>
 <smd name="4" x="1.2" y="-0.875" dx="0.97" dy="0.53" layer="1" roundness="13" rot="R90"/>
+</package>
+<package name="CON_5055670271">
+<smd name="1" x="0" y="0" dx="0.8" dy="1.2" layer="1"/>
+<smd name="2" x="-1.25" y="0" dx="0.8" dy="1.2" layer="1"/>
+<smd name="3" x="1.9" y="2.295" dx="1.3" dy="2.15" layer="1"/>
+<smd name="4" x="-3.15" y="2.295" dx="1.3" dy="2.15" layer="1"/>
+<wire x1="2.5146" y1="0" x2="4.0386" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="4.0386" y1="0.635" x2="4.0386" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="4.0386" y1="-0.635" x2="2.5146" y2="0" width="0.1524" layer="21"/>
+<wire x1="-3.5052" y1="3.8608" x2="-3.5052" y2="3.683" width="0.1524" layer="21"/>
+<wire x1="-3.5052" y1="-0.3556" x2="-1.9812" y2="-0.3556" width="0.1524" layer="21"/>
+<wire x1="2.2606" y1="-0.3556" x2="2.2606" y2="0.889" width="0.1524" layer="21"/>
+<wire x1="2.2606" y1="3.8608" x2="-3.5052" y2="3.8608" width="0.1524" layer="21"/>
+<wire x1="0.7112" y1="-0.3556" x2="2.2606" y2="-0.3556" width="0.1524" layer="21"/>
+<wire x1="2.2606" y1="3.683" x2="2.2606" y2="3.8608" width="0.1524" layer="21"/>
+<wire x1="-3.5052" y1="0.889" x2="-3.5052" y2="-0.3556" width="0.1524" layer="21"/>
+<text x="-3.6322" y="-1.905" size="1.27" layer="21" ratio="6" rot="SR0">&gt;Value</text>
+<wire x1="2.5146" y1="0" x2="4.0386" y2="0.635" width="0.1524" layer="51"/>
+<wire x1="4.0386" y1="0.635" x2="4.0386" y2="-0.635" width="0.1524" layer="51"/>
+<wire x1="4.0386" y1="-0.635" x2="2.5146" y2="0" width="0.1524" layer="51"/>
+<wire x1="-3.5052" y1="-0.3556" x2="2.2606" y2="-0.3556" width="0.1524" layer="51"/>
+<wire x1="2.2606" y1="-0.3556" x2="2.2606" y2="3.8608" width="0.1524" layer="51"/>
+<wire x1="2.2606" y1="3.8608" x2="-3.5052" y2="3.8608" width="0.1524" layer="51"/>
+<wire x1="-3.5052" y1="3.8608" x2="-3.5052" y2="-0.3556" width="0.1524" layer="51"/>
+<text x="-3.8862" y="4.445" size="1.27" layer="27" ratio="6" rot="SR0">&gt;Name</text>
 </package>
 </packages>
 </library>
@@ -1115,106 +1156,106 @@ design rules under a new name.</description>
 <attribute name="NAME" x="130.6848" y="74.2414" size="1.27" layer="25" align="center"/>
 <attribute name="VALUE" x="130.6848" y="74.2414" size="1.27" layer="27" align="center"/>
 </element>
-<element name="J2" library="sbrio_backplane" package="CON_1054301102_MOL" value="1054301102" x="71.12" y="10.16" smashed="yes">
-<attribute name="COPYRIGHT" value="Copyright (C) 2022 Ultra Librarian. All rights reserved." x="71.12" y="10.16" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="1054301102" x="71.12" y="10.16" size="1.778" layer="27" display="off"/>
-<attribute name="MFR_NAME" value="Molex Connector Corporation" x="71.12" y="10.16" size="1.778" layer="27" display="off"/>
+<element name="J2" library="sbrio_backplane" package="CON_1054301102_MOL" value="1054301102" x="69.85" y="8.89" smashed="yes">
+<attribute name="COPYRIGHT" value="Copyright (C) 2022 Ultra Librarian. All rights reserved." x="69.85" y="8.89" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="1054301102" x="69.85" y="8.89" size="1.778" layer="27" display="off"/>
+<attribute name="MFR_NAME" value="Molex Connector Corporation" x="69.85" y="8.89" size="1.778" layer="27" display="off"/>
 </element>
-<element name="J3" library="sbrio_backplane" package="CON_5011902017" value="5011902017" x="7.62" y="35.56" smashed="yes" rot="R90">
-<attribute name="COPYRIGHT" value="Copyright (C) 2022 Ultra Librarian. All rights reserved." x="7.62" y="35.56" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="5011902017" x="7.62" y="35.56" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MFR_NAME" value="Molex Connector Corporation" x="7.62" y="35.56" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="11.049" y="36.9062" size="1.27" layer="27" ratio="6" rot="SR90"/>
+<element name="J3" library="sbrio_backplane" package="CON_5011902017" value="5011902017" x="41.48" y="23.45" smashed="yes" rot="R180">
+<attribute name="COPYRIGHT" value="Copyright (C) 2022 Ultra Librarian. All rights reserved." x="41.48" y="23.45" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="5011902017" x="41.48" y="23.45" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MFR_NAME" value="Molex Connector Corporation" x="41.48" y="23.45" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="40.1338" y="26.879" size="1.27" layer="27" ratio="6" rot="SR180"/>
 </element>
-<element name="J4" library="sbrio_backplane" package="CON_5013310807" value="5013310807" x="12.7" y="55.88" smashed="yes" rot="R90">
-<attribute name="COPYRIGHT" value="Copyright (C) 2022 Ultra Librarian. All rights reserved." x="12.7" y="55.88" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER_1" value="23-5013310807TR-ND" x="12.7" y="55.88" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER_2" value="WM7885CT-ND" x="12.7" y="55.88" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER_3" value="WM7885DKR-ND" x="12.7" y="55.88" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="5013310807" x="12.7" y="55.88" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MFR_NAME" value="Molex Connector Corporation" x="12.7" y="55.88" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="10.795" y="47.8282" size="1.27" layer="27" ratio="6" rot="SR90"/>
+<element name="J4" library="sbrio_backplane" package="CON_5013310807" value="5013310807" x="9.025" y="63.5" smashed="yes">
+<attribute name="COPYRIGHT" value="Copyright (C) 2022 Ultra Librarian. All rights reserved." x="9.025" y="63.5" size="1.778" layer="27" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER_1" value="23-5013310807TR-ND" x="9.025" y="63.5" size="1.778" layer="27" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER_2" value="WM7885CT-ND" x="9.025" y="63.5" size="1.778" layer="27" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER_3" value="WM7885DKR-ND" x="9.025" y="63.5" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="5013310807" x="9.025" y="63.5" size="1.778" layer="27" display="off"/>
+<attribute name="MFR_NAME" value="Molex Connector Corporation" x="9.025" y="63.5" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="0.9732" y="65.405" size="1.27" layer="27" ratio="6" rot="SR0"/>
 </element>
-<element name="J5" library="sbrio_backplane" package="CON_5013310807" value="5013310807" x="22.86" y="55.88" smashed="yes" rot="R90">
-<attribute name="COPYRIGHT" value="Copyright (C) 2022 Ultra Librarian. All rights reserved." x="22.86" y="55.88" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER_1" value="23-5013310807TR-ND" x="22.86" y="55.88" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER_2" value="WM7885CT-ND" x="22.86" y="55.88" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER_3" value="WM7885DKR-ND" x="22.86" y="55.88" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="5013310807" x="22.86" y="55.88" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MFR_NAME" value="Molex Connector Corporation" x="22.86" y="55.88" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="20.955" y="47.8282" size="1.27" layer="27" ratio="6" rot="SR90"/>
+<element name="J5" library="sbrio_backplane" package="CON_5013310807" value="5013310807" x="24.265" y="63.5" smashed="yes">
+<attribute name="COPYRIGHT" value="Copyright (C) 2022 Ultra Librarian. All rights reserved." x="24.265" y="63.5" size="1.778" layer="27" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER_1" value="23-5013310807TR-ND" x="24.265" y="63.5" size="1.778" layer="27" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER_2" value="WM7885CT-ND" x="24.265" y="63.5" size="1.778" layer="27" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER_3" value="WM7885DKR-ND" x="24.265" y="63.5" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="5013310807" x="24.265" y="63.5" size="1.778" layer="27" display="off"/>
+<attribute name="MFR_NAME" value="Molex Connector Corporation" x="24.265" y="63.5" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="16.2132" y="65.405" size="1.27" layer="27" ratio="6" rot="SR0"/>
 </element>
-<element name="J6" library="sbrio_backplane" package="CON_5013310807" value="5013310807" x="33.02" y="55.88" smashed="yes" rot="R90">
-<attribute name="COPYRIGHT" value="Copyright (C) 2022 Ultra Librarian. All rights reserved." x="33.02" y="55.88" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER_1" value="23-5013310807TR-ND" x="33.02" y="55.88" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER_2" value="WM7885CT-ND" x="33.02" y="55.88" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER_3" value="WM7885DKR-ND" x="33.02" y="55.88" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="5013310807" x="33.02" y="55.88" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MFR_NAME" value="Molex Connector Corporation" x="33.02" y="55.88" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="31.115" y="47.8282" size="1.27" layer="27" ratio="6" rot="SR90"/>
+<element name="J6" library="sbrio_backplane" package="CON_5013310807" value="5013310807" x="39.505" y="63.5" smashed="yes">
+<attribute name="COPYRIGHT" value="Copyright (C) 2022 Ultra Librarian. All rights reserved." x="39.505" y="63.5" size="1.778" layer="27" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER_1" value="23-5013310807TR-ND" x="39.505" y="63.5" size="1.778" layer="27" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER_2" value="WM7885CT-ND" x="39.505" y="63.5" size="1.778" layer="27" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER_3" value="WM7885DKR-ND" x="39.505" y="63.5" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="5013310807" x="39.505" y="63.5" size="1.778" layer="27" display="off"/>
+<attribute name="MFR_NAME" value="Molex Connector Corporation" x="39.505" y="63.5" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="31.4532" y="65.405" size="1.27" layer="27" ratio="6" rot="SR0"/>
 </element>
-<element name="J7" library="sbrio_backplane" package="CON_5013310807" value="5013310807" x="43.18" y="55.88" smashed="yes" rot="R90">
-<attribute name="COPYRIGHT" value="Copyright (C) 2022 Ultra Librarian. All rights reserved." x="43.18" y="55.88" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER_1" value="23-5013310807TR-ND" x="43.18" y="55.88" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER_2" value="WM7885CT-ND" x="43.18" y="55.88" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER_3" value="WM7885DKR-ND" x="43.18" y="55.88" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="5013310807" x="43.18" y="55.88" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MFR_NAME" value="Molex Connector Corporation" x="43.18" y="55.88" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="41.275" y="47.8282" size="1.27" layer="27" ratio="6" rot="SR90"/>
+<element name="J7" library="sbrio_backplane" package="CON_5013310807" value="5013310807" x="54.745" y="63.5" smashed="yes">
+<attribute name="COPYRIGHT" value="Copyright (C) 2022 Ultra Librarian. All rights reserved." x="54.745" y="63.5" size="1.778" layer="27" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER_1" value="23-5013310807TR-ND" x="54.745" y="63.5" size="1.778" layer="27" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER_2" value="WM7885CT-ND" x="54.745" y="63.5" size="1.778" layer="27" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER_3" value="WM7885DKR-ND" x="54.745" y="63.5" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="5013310807" x="54.745" y="63.5" size="1.778" layer="27" display="off"/>
+<attribute name="MFR_NAME" value="Molex Connector Corporation" x="54.745" y="63.5" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="46.6932" y="65.405" size="1.27" layer="27" ratio="6" rot="SR0"/>
 </element>
-<element name="J8" library="sbrio_backplane" package="CON_5013310807" value="5013310807" x="53.34" y="55.88" smashed="yes" rot="R90">
-<attribute name="COPYRIGHT" value="Copyright (C) 2022 Ultra Librarian. All rights reserved." x="53.34" y="55.88" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER_1" value="23-5013310807TR-ND" x="53.34" y="55.88" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER_2" value="WM7885CT-ND" x="53.34" y="55.88" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER_3" value="WM7885DKR-ND" x="53.34" y="55.88" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="5013310807" x="53.34" y="55.88" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MFR_NAME" value="Molex Connector Corporation" x="53.34" y="55.88" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="51.435" y="47.8282" size="1.27" layer="27" ratio="6" rot="SR90"/>
+<element name="J8" library="sbrio_backplane" package="CON_5013310807" value="5013310807" x="69.985" y="63.5" smashed="yes">
+<attribute name="COPYRIGHT" value="Copyright (C) 2022 Ultra Librarian. All rights reserved." x="69.985" y="63.5" size="1.778" layer="27" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER_1" value="23-5013310807TR-ND" x="69.985" y="63.5" size="1.778" layer="27" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER_2" value="WM7885CT-ND" x="69.985" y="63.5" size="1.778" layer="27" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER_3" value="WM7885DKR-ND" x="69.985" y="63.5" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="5013310807" x="69.985" y="63.5" size="1.778" layer="27" display="off"/>
+<attribute name="MFR_NAME" value="Molex Connector Corporation" x="69.985" y="63.5" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="61.9332" y="65.405" size="1.27" layer="27" ratio="6" rot="SR0"/>
 </element>
-<element name="J9" library="sbrio_backplane" package="CON_5013310807" value="5013310807" x="12.7" y="12.7" smashed="yes" rot="R90">
-<attribute name="COPYRIGHT" value="Copyright (C) 2022 Ultra Librarian. All rights reserved." x="12.7" y="12.7" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER_1" value="23-5013310807TR-ND" x="12.7" y="12.7" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER_2" value="WM7885CT-ND" x="12.7" y="12.7" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER_3" value="WM7885DKR-ND" x="12.7" y="12.7" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="5013310807" x="12.7" y="12.7" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MFR_NAME" value="Molex Connector Corporation" x="12.7" y="12.7" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="10.795" y="4.6482" size="1.27" layer="27" ratio="6" rot="SR90"/>
+<element name="J9" library="sbrio_backplane" package="CON_5013310807" value="5013310807" x="9.025" y="35.56" smashed="yes">
+<attribute name="COPYRIGHT" value="Copyright (C) 2022 Ultra Librarian. All rights reserved." x="9.025" y="35.56" size="1.778" layer="27" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER_1" value="23-5013310807TR-ND" x="9.025" y="35.56" size="1.778" layer="27" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER_2" value="WM7885CT-ND" x="9.025" y="35.56" size="1.778" layer="27" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER_3" value="WM7885DKR-ND" x="9.025" y="35.56" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="5013310807" x="9.025" y="35.56" size="1.778" layer="27" display="off"/>
+<attribute name="MFR_NAME" value="Molex Connector Corporation" x="9.025" y="35.56" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="0.9732" y="37.465" size="1.27" layer="27" ratio="6" rot="SR0"/>
 </element>
-<element name="J10" library="sbrio_backplane" package="CON_5013310807" value="5013310807" x="22.86" y="12.7" smashed="yes" rot="R90">
-<attribute name="COPYRIGHT" value="Copyright (C) 2022 Ultra Librarian. All rights reserved." x="22.86" y="12.7" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER_1" value="23-5013310807TR-ND" x="22.86" y="12.7" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER_2" value="WM7885CT-ND" x="22.86" y="12.7" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER_3" value="WM7885DKR-ND" x="22.86" y="12.7" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="5013310807" x="22.86" y="12.7" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MFR_NAME" value="Molex Connector Corporation" x="22.86" y="12.7" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="20.955" y="4.6482" size="1.27" layer="27" ratio="6" rot="SR90"/>
+<element name="J10" library="sbrio_backplane" package="CON_5013310807" value="5013310807" x="24.265" y="35.56" smashed="yes">
+<attribute name="COPYRIGHT" value="Copyright (C) 2022 Ultra Librarian. All rights reserved." x="24.265" y="35.56" size="1.778" layer="27" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER_1" value="23-5013310807TR-ND" x="24.265" y="35.56" size="1.778" layer="27" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER_2" value="WM7885CT-ND" x="24.265" y="35.56" size="1.778" layer="27" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER_3" value="WM7885DKR-ND" x="24.265" y="35.56" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="5013310807" x="24.265" y="35.56" size="1.778" layer="27" display="off"/>
+<attribute name="MFR_NAME" value="Molex Connector Corporation" x="24.265" y="35.56" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="16.2132" y="37.465" size="1.27" layer="27" ratio="6" rot="SR0"/>
 </element>
-<element name="J11" library="sbrio_backplane" package="CON_5013310807" value="5013310807" x="33.02" y="12.7" smashed="yes" rot="R90">
-<attribute name="COPYRIGHT" value="Copyright (C) 2022 Ultra Librarian. All rights reserved." x="33.02" y="12.7" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER_1" value="23-5013310807TR-ND" x="33.02" y="12.7" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER_2" value="WM7885CT-ND" x="33.02" y="12.7" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER_3" value="WM7885DKR-ND" x="33.02" y="12.7" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="5013310807" x="33.02" y="12.7" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MFR_NAME" value="Molex Connector Corporation" x="33.02" y="12.7" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="31.115" y="4.6482" size="1.27" layer="27" ratio="6" rot="SR90"/>
+<element name="J11" library="sbrio_backplane" package="CON_5013310807" value="5013310807" x="39.505" y="35.56" smashed="yes">
+<attribute name="COPYRIGHT" value="Copyright (C) 2022 Ultra Librarian. All rights reserved." x="39.505" y="35.56" size="1.778" layer="27" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER_1" value="23-5013310807TR-ND" x="39.505" y="35.56" size="1.778" layer="27" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER_2" value="WM7885CT-ND" x="39.505" y="35.56" size="1.778" layer="27" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER_3" value="WM7885DKR-ND" x="39.505" y="35.56" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="5013310807" x="39.505" y="35.56" size="1.778" layer="27" display="off"/>
+<attribute name="MFR_NAME" value="Molex Connector Corporation" x="39.505" y="35.56" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="31.4532" y="37.465" size="1.27" layer="27" ratio="6" rot="SR0"/>
 </element>
-<element name="J12" library="sbrio_backplane" package="CON_5013310807" value="5013310807" x="43.18" y="12.7" smashed="yes" rot="R90">
-<attribute name="COPYRIGHT" value="Copyright (C) 2022 Ultra Librarian. All rights reserved." x="43.18" y="12.7" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER_1" value="23-5013310807TR-ND" x="43.18" y="12.7" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER_2" value="WM7885CT-ND" x="43.18" y="12.7" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER_3" value="WM7885DKR-ND" x="43.18" y="12.7" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="5013310807" x="43.18" y="12.7" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MFR_NAME" value="Molex Connector Corporation" x="43.18" y="12.7" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="41.275" y="4.6482" size="1.27" layer="27" ratio="6" rot="SR90"/>
+<element name="J12" library="sbrio_backplane" package="CON_5013310807" value="5013310807" x="54.745" y="35.56" smashed="yes">
+<attribute name="COPYRIGHT" value="Copyright (C) 2022 Ultra Librarian. All rights reserved." x="54.745" y="35.56" size="1.778" layer="27" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER_1" value="23-5013310807TR-ND" x="54.745" y="35.56" size="1.778" layer="27" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER_2" value="WM7885CT-ND" x="54.745" y="35.56" size="1.778" layer="27" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER_3" value="WM7885DKR-ND" x="54.745" y="35.56" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="5013310807" x="54.745" y="35.56" size="1.778" layer="27" display="off"/>
+<attribute name="MFR_NAME" value="Molex Connector Corporation" x="54.745" y="35.56" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="46.6932" y="37.465" size="1.27" layer="27" ratio="6" rot="SR0"/>
 </element>
-<element name="J13" library="sbrio_backplane" package="CON_5013310807" value="5013310807" x="53.34" y="12.7" smashed="yes" rot="R90">
-<attribute name="COPYRIGHT" value="Copyright (C) 2022 Ultra Librarian. All rights reserved." x="53.34" y="12.7" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER_1" value="23-5013310807TR-ND" x="53.34" y="12.7" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER_2" value="WM7885CT-ND" x="53.34" y="12.7" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER_3" value="WM7885DKR-ND" x="53.34" y="12.7" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="5013310807" x="53.34" y="12.7" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MFR_NAME" value="Molex Connector Corporation" x="53.34" y="12.7" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="51.435" y="4.6482" size="1.27" layer="27" ratio="6" rot="SR90"/>
+<element name="J13" library="sbrio_backplane" package="CON_5013310807" value="5013310807" x="69.985" y="35.56" smashed="yes">
+<attribute name="COPYRIGHT" value="Copyright (C) 2022 Ultra Librarian. All rights reserved." x="69.985" y="35.56" size="1.778" layer="27" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER_1" value="23-5013310807TR-ND" x="69.985" y="35.56" size="1.778" layer="27" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER_2" value="WM7885CT-ND" x="69.985" y="35.56" size="1.778" layer="27" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER_3" value="WM7885DKR-ND" x="69.985" y="35.56" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="5013310807" x="69.985" y="35.56" size="1.778" layer="27" display="off"/>
+<attribute name="MFR_NAME" value="Molex Connector Corporation" x="69.985" y="35.56" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="61.9332" y="37.465" size="1.27" layer="27" ratio="6" rot="SR0"/>
 </element>
 <element name="J24" library="SEAM-40-03.0-S-06-2-A-K-TR" package="SAMTEC_SEAM-40-03.0-S-06-2-A-K-TR" value="SEAM-40-03.0-S-06-2-A-K-TR" x="40.0304" y="96.75" smashed="yes" rot="MR0">
 <attribute name="AVAILABILITY" value="In Stock" x="40.0304" y="96.75" size="1.778" layer="28" rot="MR0" display="off"/>
@@ -1226,289 +1267,298 @@ design rules under a new name.</description>
 <attribute name="PRICE" value="None" x="40.0304" y="96.75" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="PURCHASE-URL" value="https://pricing.snapeda.com/search/part/SEAM-40-03.0-S-06-2-A-K-TR/?ref=eda" x="40.0304" y="96.75" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
-<element name="U1" library="sbrio_backplane" package="PW16" value="AM26LV32EIPWR" x="15.24" y="78.74" smashed="yes" rot="MR180">
-<attribute name="COPYRIGHT" value="Copyright (C) 2022 Ultra Librarian. All rights reserved." x="15.24" y="78.74" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER_1" value="296-24696-1-ND" x="15.24" y="78.74" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER_2" value="296-24696-2-ND" x="15.24" y="78.74" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER_3" value="296-24696-6-ND" x="15.24" y="78.74" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="AM26LV32EIPWR" x="15.24" y="78.74" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="MFR_NAME" value="Texas Instruments" x="15.24" y="78.74" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="NAME" x="11.9634" y="79.375" size="1.27" layer="28" ratio="6" rot="SMR180"/>
+<element name="U1" library="sbrio_backplane" package="PW16" value="AM26LV32EIPWR" x="6.485" y="76.97" smashed="yes">
+<attribute name="COPYRIGHT" value="Copyright (C) 2022 Ultra Librarian. All rights reserved." x="6.485" y="76.97" size="1.778" layer="27" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER_1" value="296-24696-1-ND" x="6.485" y="76.97" size="1.778" layer="27" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER_2" value="296-24696-2-ND" x="6.485" y="76.97" size="1.778" layer="27" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER_3" value="296-24696-6-ND" x="6.485" y="76.97" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="AM26LV32EIPWR" x="6.485" y="76.97" size="1.778" layer="27" display="off"/>
+<attribute name="MFR_NAME" value="Texas Instruments" x="6.485" y="76.97" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="3.2084" y="76.335" size="1.27" layer="27" ratio="6" rot="SR0"/>
 </element>
-<element name="U2" library="sbrio_backplane" package="PW16" value="AM26LV32EIPWR" x="25.4" y="78.74" smashed="yes" rot="MR180">
-<attribute name="COPYRIGHT" value="Copyright (C) 2022 Ultra Librarian. All rights reserved." x="25.4" y="78.74" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER_1" value="296-24696-1-ND" x="25.4" y="78.74" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER_2" value="296-24696-2-ND" x="25.4" y="78.74" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER_3" value="296-24696-6-ND" x="25.4" y="78.74" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="AM26LV32EIPWR" x="25.4" y="78.74" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="MFR_NAME" value="Texas Instruments" x="25.4" y="78.74" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="NAME" x="22.1234" y="79.375" size="1.27" layer="28" ratio="6" rot="SMR180"/>
+<element name="U2" library="sbrio_backplane" package="PW16" value="AM26LV32EIPWR" x="21.725" y="76.97" smashed="yes">
+<attribute name="COPYRIGHT" value="Copyright (C) 2022 Ultra Librarian. All rights reserved." x="21.725" y="76.97" size="1.778" layer="27" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER_1" value="296-24696-1-ND" x="21.725" y="76.97" size="1.778" layer="27" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER_2" value="296-24696-2-ND" x="21.725" y="76.97" size="1.778" layer="27" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER_3" value="296-24696-6-ND" x="21.725" y="76.97" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="AM26LV32EIPWR" x="21.725" y="76.97" size="1.778" layer="27" display="off"/>
+<attribute name="MFR_NAME" value="Texas Instruments" x="21.725" y="76.97" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="18.4484" y="76.335" size="1.27" layer="27" ratio="6" rot="SR0"/>
 </element>
-<element name="U3" library="sbrio_backplane" package="PW16" value="AM26LV32EIPWR" x="35.56" y="78.74" smashed="yes" rot="MR180">
-<attribute name="COPYRIGHT" value="Copyright (C) 2022 Ultra Librarian. All rights reserved." x="35.56" y="78.74" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER_1" value="296-24696-1-ND" x="35.56" y="78.74" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER_2" value="296-24696-2-ND" x="35.56" y="78.74" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER_3" value="296-24696-6-ND" x="35.56" y="78.74" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="AM26LV32EIPWR" x="35.56" y="78.74" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="MFR_NAME" value="Texas Instruments" x="35.56" y="78.74" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="NAME" x="32.2834" y="79.375" size="1.27" layer="28" ratio="6" rot="SMR180"/>
+<element name="U3" library="sbrio_backplane" package="PW16" value="AM26LV32EIPWR" x="36.965" y="76.97" smashed="yes">
+<attribute name="COPYRIGHT" value="Copyright (C) 2022 Ultra Librarian. All rights reserved." x="36.965" y="76.97" size="1.778" layer="27" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER_1" value="296-24696-1-ND" x="36.965" y="76.97" size="1.778" layer="27" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER_2" value="296-24696-2-ND" x="36.965" y="76.97" size="1.778" layer="27" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER_3" value="296-24696-6-ND" x="36.965" y="76.97" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="AM26LV32EIPWR" x="36.965" y="76.97" size="1.778" layer="27" display="off"/>
+<attribute name="MFR_NAME" value="Texas Instruments" x="36.965" y="76.97" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="33.6884" y="76.335" size="1.27" layer="27" ratio="6" rot="SR0"/>
 </element>
-<element name="U4" library="sbrio_backplane" package="PW16" value="AM26LV32EIPWR" x="45.72" y="78.74" smashed="yes" rot="MR180">
-<attribute name="COPYRIGHT" value="Copyright (C) 2022 Ultra Librarian. All rights reserved." x="45.72" y="78.74" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER_1" value="296-24696-1-ND" x="45.72" y="78.74" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER_2" value="296-24696-2-ND" x="45.72" y="78.74" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER_3" value="296-24696-6-ND" x="45.72" y="78.74" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="AM26LV32EIPWR" x="45.72" y="78.74" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="MFR_NAME" value="Texas Instruments" x="45.72" y="78.74" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="NAME" x="42.4434" y="79.375" size="1.27" layer="28" ratio="6" rot="SMR180"/>
+<element name="U4" library="sbrio_backplane" package="PW16" value="AM26LV32EIPWR" x="52.205" y="76.97" smashed="yes">
+<attribute name="COPYRIGHT" value="Copyright (C) 2022 Ultra Librarian. All rights reserved." x="52.205" y="76.97" size="1.778" layer="27" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER_1" value="296-24696-1-ND" x="52.205" y="76.97" size="1.778" layer="27" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER_2" value="296-24696-2-ND" x="52.205" y="76.97" size="1.778" layer="27" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER_3" value="296-24696-6-ND" x="52.205" y="76.97" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="AM26LV32EIPWR" x="52.205" y="76.97" size="1.778" layer="27" display="off"/>
+<attribute name="MFR_NAME" value="Texas Instruments" x="52.205" y="76.97" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="48.9284" y="76.335" size="1.27" layer="27" ratio="6" rot="SR0"/>
 </element>
-<element name="U5" library="sbrio_backplane" package="PW16" value="AM26LV32EIPWR" x="55.88" y="78.74" smashed="yes" rot="MR180">
-<attribute name="COPYRIGHT" value="Copyright (C) 2022 Ultra Librarian. All rights reserved." x="55.88" y="78.74" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER_1" value="296-24696-1-ND" x="55.88" y="78.74" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER_2" value="296-24696-2-ND" x="55.88" y="78.74" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER_3" value="296-24696-6-ND" x="55.88" y="78.74" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="AM26LV32EIPWR" x="55.88" y="78.74" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="MFR_NAME" value="Texas Instruments" x="55.88" y="78.74" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="NAME" x="52.6034" y="79.375" size="1.27" layer="28" ratio="6" rot="SMR180"/>
+<element name="U5" library="sbrio_backplane" package="PW16" value="AM26LV32EIPWR" x="67.445" y="76.97" smashed="yes">
+<attribute name="COPYRIGHT" value="Copyright (C) 2022 Ultra Librarian. All rights reserved." x="67.445" y="76.97" size="1.778" layer="27" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER_1" value="296-24696-1-ND" x="67.445" y="76.97" size="1.778" layer="27" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER_2" value="296-24696-2-ND" x="67.445" y="76.97" size="1.778" layer="27" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER_3" value="296-24696-6-ND" x="67.445" y="76.97" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="AM26LV32EIPWR" x="67.445" y="76.97" size="1.778" layer="27" display="off"/>
+<attribute name="MFR_NAME" value="Texas Instruments" x="67.445" y="76.97" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="64.1684" y="76.335" size="1.27" layer="27" ratio="6" rot="SR0"/>
 </element>
-<element name="U6" library="sbrio_backplane" package="PW16" value="AM26LV32EIPWR" x="15.24" y="38.1" smashed="yes" rot="MR180">
-<attribute name="COPYRIGHT" value="Copyright (C) 2022 Ultra Librarian. All rights reserved." x="15.24" y="38.1" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER_1" value="296-24696-1-ND" x="15.24" y="38.1" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER_2" value="296-24696-2-ND" x="15.24" y="38.1" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER_3" value="296-24696-6-ND" x="15.24" y="38.1" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="AM26LV32EIPWR" x="15.24" y="38.1" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="MFR_NAME" value="Texas Instruments" x="15.24" y="38.1" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="NAME" x="11.9634" y="38.735" size="1.27" layer="28" ratio="6" rot="SMR180"/>
+<element name="U6" library="sbrio_backplane" package="PW16" value="AM26LV32EIPWR" x="6.485" y="49.03" smashed="yes">
+<attribute name="COPYRIGHT" value="Copyright (C) 2022 Ultra Librarian. All rights reserved." x="6.485" y="49.03" size="1.778" layer="27" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER_1" value="296-24696-1-ND" x="6.485" y="49.03" size="1.778" layer="27" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER_2" value="296-24696-2-ND" x="6.485" y="49.03" size="1.778" layer="27" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER_3" value="296-24696-6-ND" x="6.485" y="49.03" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="AM26LV32EIPWR" x="6.485" y="49.03" size="1.778" layer="27" display="off"/>
+<attribute name="MFR_NAME" value="Texas Instruments" x="6.485" y="49.03" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="3.2084" y="48.395" size="1.27" layer="27" ratio="6" rot="SR0"/>
 </element>
-<element name="U7" library="sbrio_backplane" package="PW16" value="AM26LV32EIPWR" x="25.4" y="38.1" smashed="yes" rot="MR180">
-<attribute name="COPYRIGHT" value="Copyright (C) 2022 Ultra Librarian. All rights reserved." x="25.4" y="38.1" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER_1" value="296-24696-1-ND" x="25.4" y="38.1" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER_2" value="296-24696-2-ND" x="25.4" y="38.1" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER_3" value="296-24696-6-ND" x="25.4" y="38.1" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="AM26LV32EIPWR" x="25.4" y="38.1" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="MFR_NAME" value="Texas Instruments" x="25.4" y="38.1" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="NAME" x="22.1234" y="38.735" size="1.27" layer="28" ratio="6" rot="SMR180"/>
+<element name="U7" library="sbrio_backplane" package="PW16" value="AM26LV32EIPWR" x="21.725" y="49.03" smashed="yes">
+<attribute name="COPYRIGHT" value="Copyright (C) 2022 Ultra Librarian. All rights reserved." x="21.725" y="49.03" size="1.778" layer="27" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER_1" value="296-24696-1-ND" x="21.725" y="49.03" size="1.778" layer="27" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER_2" value="296-24696-2-ND" x="21.725" y="49.03" size="1.778" layer="27" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER_3" value="296-24696-6-ND" x="21.725" y="49.03" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="AM26LV32EIPWR" x="21.725" y="49.03" size="1.778" layer="27" display="off"/>
+<attribute name="MFR_NAME" value="Texas Instruments" x="21.725" y="49.03" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="18.4484" y="48.395" size="1.27" layer="27" ratio="6" rot="SR0"/>
 </element>
-<element name="U8" library="sbrio_backplane" package="PW16" value="AM26LV32EIPWR" x="35.56" y="38.1" smashed="yes" rot="MR180">
-<attribute name="COPYRIGHT" value="Copyright (C) 2022 Ultra Librarian. All rights reserved." x="35.56" y="38.1" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER_1" value="296-24696-1-ND" x="35.56" y="38.1" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER_2" value="296-24696-2-ND" x="35.56" y="38.1" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER_3" value="296-24696-6-ND" x="35.56" y="38.1" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="AM26LV32EIPWR" x="35.56" y="38.1" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="MFR_NAME" value="Texas Instruments" x="35.56" y="38.1" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="NAME" x="32.2834" y="38.735" size="1.27" layer="28" ratio="6" rot="SMR180"/>
+<element name="U8" library="sbrio_backplane" package="PW16" value="AM26LV32EIPWR" x="36.965" y="49.03" smashed="yes">
+<attribute name="COPYRIGHT" value="Copyright (C) 2022 Ultra Librarian. All rights reserved." x="36.965" y="49.03" size="1.778" layer="27" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER_1" value="296-24696-1-ND" x="36.965" y="49.03" size="1.778" layer="27" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER_2" value="296-24696-2-ND" x="36.965" y="49.03" size="1.778" layer="27" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER_3" value="296-24696-6-ND" x="36.965" y="49.03" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="AM26LV32EIPWR" x="36.965" y="49.03" size="1.778" layer="27" display="off"/>
+<attribute name="MFR_NAME" value="Texas Instruments" x="36.965" y="49.03" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="33.6884" y="48.395" size="1.27" layer="27" ratio="6" rot="SR0"/>
 </element>
-<element name="U9" library="sbrio_backplane" package="PW16" value="AM26LV32EIPWR" x="45.72" y="38.1" smashed="yes" rot="MR180">
-<attribute name="COPYRIGHT" value="Copyright (C) 2022 Ultra Librarian. All rights reserved." x="45.72" y="38.1" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER_1" value="296-24696-1-ND" x="45.72" y="38.1" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER_2" value="296-24696-2-ND" x="45.72" y="38.1" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER_3" value="296-24696-6-ND" x="45.72" y="38.1" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="AM26LV32EIPWR" x="45.72" y="38.1" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="MFR_NAME" value="Texas Instruments" x="45.72" y="38.1" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="NAME" x="42.4434" y="38.735" size="1.27" layer="28" ratio="6" rot="SMR180"/>
+<element name="U9" library="sbrio_backplane" package="PW16" value="AM26LV32EIPWR" x="52.205" y="49.03" smashed="yes">
+<attribute name="COPYRIGHT" value="Copyright (C) 2022 Ultra Librarian. All rights reserved." x="52.205" y="49.03" size="1.778" layer="27" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER_1" value="296-24696-1-ND" x="52.205" y="49.03" size="1.778" layer="27" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER_2" value="296-24696-2-ND" x="52.205" y="49.03" size="1.778" layer="27" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER_3" value="296-24696-6-ND" x="52.205" y="49.03" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="AM26LV32EIPWR" x="52.205" y="49.03" size="1.778" layer="27" display="off"/>
+<attribute name="MFR_NAME" value="Texas Instruments" x="52.205" y="49.03" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="48.9284" y="48.395" size="1.27" layer="27" ratio="6" rot="SR0"/>
 </element>
-<element name="U10" library="sbrio_backplane" package="PW16" value="AM26LV32EIPWR" x="55.88" y="38.1" smashed="yes" rot="MR180">
-<attribute name="COPYRIGHT" value="Copyright (C) 2022 Ultra Librarian. All rights reserved." x="55.88" y="38.1" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER_1" value="296-24696-1-ND" x="55.88" y="38.1" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER_2" value="296-24696-2-ND" x="55.88" y="38.1" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER_3" value="296-24696-6-ND" x="55.88" y="38.1" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="AM26LV32EIPWR" x="55.88" y="38.1" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="MFR_NAME" value="Texas Instruments" x="55.88" y="38.1" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="NAME" x="52.6034" y="38.735" size="1.27" layer="28" ratio="6" rot="SMR180"/>
+<element name="U10" library="sbrio_backplane" package="PW16" value="AM26LV32EIPWR" x="67.445" y="49.03" smashed="yes">
+<attribute name="COPYRIGHT" value="Copyright (C) 2022 Ultra Librarian. All rights reserved." x="67.445" y="49.03" size="1.778" layer="27" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER_1" value="296-24696-1-ND" x="67.445" y="49.03" size="1.778" layer="27" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER_2" value="296-24696-2-ND" x="67.445" y="49.03" size="1.778" layer="27" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER_3" value="296-24696-6-ND" x="67.445" y="49.03" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="AM26LV32EIPWR" x="67.445" y="49.03" size="1.778" layer="27" display="off"/>
+<attribute name="MFR_NAME" value="Texas Instruments" x="67.445" y="49.03" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="64.1684" y="48.395" size="1.27" layer="27" ratio="6" rot="SR0"/>
 </element>
-<element name="J14" library="sbrio_backplane" package="CON_5013311007" value="5013311007" x="12.7" y="71.12" smashed="yes" rot="R90">
-<attribute name="COPYRIGHT" value="Copyright (C) 2022 Ultra Librarian. All rights reserved." x="12.7" y="71.12" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER_1" value="WM7887TR-ND" x="12.7" y="71.12" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER_2" value="WM7887CT-ND" x="12.7" y="71.12" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER_3" value="WM7887DKR-ND" x="12.7" y="71.12" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="5013311007" x="12.7" y="71.12" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MFR_NAME" value="Molex Connector Corporation" x="12.7" y="71.12" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="10.795" y="60.8076" size="1.27" layer="27" ratio="6" rot="SR90"/>
+<element name="J14" library="sbrio_backplane" package="CON_5013311007" value="5013311007" x="2.04" y="68.58" smashed="yes" rot="R180">
+<attribute name="COPYRIGHT" value="Copyright (C) 2022 Ultra Librarian. All rights reserved." x="2.04" y="68.58" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER_1" value="WM7887TR-ND" x="2.04" y="68.58" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER_2" value="WM7887CT-ND" x="2.04" y="68.58" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER_3" value="WM7887DKR-ND" x="2.04" y="68.58" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="5013311007" x="2.04" y="68.58" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MFR_NAME" value="Molex Connector Corporation" x="2.04" y="68.58" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="12.3524" y="71.755" size="1.27" layer="27" ratio="6" rot="SR180"/>
 </element>
-<element name="J15" library="sbrio_backplane" package="CON_5013311007" value="5013311007" x="22.86" y="71.12" smashed="yes" rot="R90">
-<attribute name="COPYRIGHT" value="Copyright (C) 2022 Ultra Librarian. All rights reserved." x="22.86" y="71.12" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER_1" value="WM7887TR-ND" x="22.86" y="71.12" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER_2" value="WM7887CT-ND" x="22.86" y="71.12" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER_3" value="WM7887DKR-ND" x="22.86" y="71.12" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="5013311007" x="22.86" y="71.12" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MFR_NAME" value="Molex Connector Corporation" x="22.86" y="71.12" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="20.955" y="60.8076" size="1.27" layer="27" ratio="6" rot="SR90"/>
+<element name="J15" library="sbrio_backplane" package="CON_5013311007" value="5013311007" x="17.28" y="68.58" smashed="yes" rot="R180">
+<attribute name="COPYRIGHT" value="Copyright (C) 2022 Ultra Librarian. All rights reserved." x="17.28" y="68.58" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER_1" value="WM7887TR-ND" x="17.28" y="68.58" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER_2" value="WM7887CT-ND" x="17.28" y="68.58" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER_3" value="WM7887DKR-ND" x="17.28" y="68.58" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="5013311007" x="17.28" y="68.58" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MFR_NAME" value="Molex Connector Corporation" x="17.28" y="68.58" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="27.5924" y="66.675" size="1.27" layer="27" ratio="6" rot="SR180"/>
 </element>
-<element name="J16" library="sbrio_backplane" package="CON_5013311007" value="5013311007" x="33.02" y="71.12" smashed="yes" rot="R90">
-<attribute name="COPYRIGHT" value="Copyright (C) 2022 Ultra Librarian. All rights reserved." x="33.02" y="71.12" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER_1" value="WM7887TR-ND" x="33.02" y="71.12" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER_2" value="WM7887CT-ND" x="33.02" y="71.12" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER_3" value="WM7887DKR-ND" x="33.02" y="71.12" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="5013311007" x="33.02" y="71.12" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MFR_NAME" value="Molex Connector Corporation" x="33.02" y="71.12" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="31.115" y="60.8076" size="1.27" layer="27" ratio="6" rot="SR90"/>
+<element name="J16" library="sbrio_backplane" package="CON_5013311007" value="5013311007" x="32.52" y="68.58" smashed="yes" rot="R180">
+<attribute name="COPYRIGHT" value="Copyright (C) 2022 Ultra Librarian. All rights reserved." x="32.52" y="68.58" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER_1" value="WM7887TR-ND" x="32.52" y="68.58" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER_2" value="WM7887CT-ND" x="32.52" y="68.58" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER_3" value="WM7887DKR-ND" x="32.52" y="68.58" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="5013311007" x="32.52" y="68.58" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MFR_NAME" value="Molex Connector Corporation" x="32.52" y="68.58" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="42.8324" y="66.675" size="1.27" layer="27" ratio="6" rot="SR180"/>
 </element>
-<element name="J17" library="sbrio_backplane" package="CON_5013311007" value="5013311007" x="43.18" y="71.12" smashed="yes" rot="R90">
-<attribute name="COPYRIGHT" value="Copyright (C) 2022 Ultra Librarian. All rights reserved." x="43.18" y="71.12" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER_1" value="WM7887TR-ND" x="43.18" y="71.12" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER_2" value="WM7887CT-ND" x="43.18" y="71.12" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER_3" value="WM7887DKR-ND" x="43.18" y="71.12" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="5013311007" x="43.18" y="71.12" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MFR_NAME" value="Molex Connector Corporation" x="43.18" y="71.12" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="41.275" y="60.8076" size="1.27" layer="27" ratio="6" rot="SR90"/>
+<element name="J17" library="sbrio_backplane" package="CON_5013311007" value="5013311007" x="47.76" y="68.58" smashed="yes" rot="R180">
+<attribute name="COPYRIGHT" value="Copyright (C) 2022 Ultra Librarian. All rights reserved." x="47.76" y="68.58" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER_1" value="WM7887TR-ND" x="47.76" y="68.58" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER_2" value="WM7887CT-ND" x="47.76" y="68.58" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER_3" value="WM7887DKR-ND" x="47.76" y="68.58" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="5013311007" x="47.76" y="68.58" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MFR_NAME" value="Molex Connector Corporation" x="47.76" y="68.58" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="58.0724" y="66.675" size="1.27" layer="27" ratio="6" rot="SR180"/>
 </element>
-<element name="J18" library="sbrio_backplane" package="CON_5013311007" value="5013311007" x="53.34" y="71.12" smashed="yes" rot="R90">
-<attribute name="COPYRIGHT" value="Copyright (C) 2022 Ultra Librarian. All rights reserved." x="53.34" y="71.12" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER_1" value="WM7887TR-ND" x="53.34" y="71.12" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER_2" value="WM7887CT-ND" x="53.34" y="71.12" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER_3" value="WM7887DKR-ND" x="53.34" y="71.12" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="5013311007" x="53.34" y="71.12" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MFR_NAME" value="Molex Connector Corporation" x="53.34" y="71.12" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="51.435" y="60.8076" size="1.27" layer="27" ratio="6" rot="SR90"/>
+<element name="J18" library="sbrio_backplane" package="CON_5013311007" value="5013311007" x="63" y="68.58" smashed="yes" rot="R180">
+<attribute name="COPYRIGHT" value="Copyright (C) 2022 Ultra Librarian. All rights reserved." x="63" y="68.58" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER_1" value="WM7887TR-ND" x="63" y="68.58" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER_2" value="WM7887CT-ND" x="63" y="68.58" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER_3" value="WM7887DKR-ND" x="63" y="68.58" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="5013311007" x="63" y="68.58" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MFR_NAME" value="Molex Connector Corporation" x="63" y="68.58" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="73.3124" y="66.675" size="1.27" layer="27" ratio="6" rot="SR180"/>
 </element>
-<element name="J19" library="sbrio_backplane" package="CON_5013311007" value="5013311007" x="12.7" y="30.48" smashed="yes" rot="R90">
-<attribute name="COPYRIGHT" value="Copyright (C) 2022 Ultra Librarian. All rights reserved." x="12.7" y="30.48" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER_1" value="WM7887TR-ND" x="12.7" y="30.48" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER_2" value="WM7887CT-ND" x="12.7" y="30.48" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER_3" value="WM7887DKR-ND" x="12.7" y="30.48" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="5013311007" x="12.7" y="30.48" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MFR_NAME" value="Molex Connector Corporation" x="12.7" y="30.48" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="10.795" y="20.1676" size="1.27" layer="27" ratio="6" rot="SR90"/>
+<element name="J19" library="sbrio_backplane" package="CON_5013311007" value="5013311007" x="2.04" y="40.64" smashed="yes" rot="R180">
+<attribute name="COPYRIGHT" value="Copyright (C) 2022 Ultra Librarian. All rights reserved." x="2.04" y="40.64" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER_1" value="WM7887TR-ND" x="2.04" y="40.64" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER_2" value="WM7887CT-ND" x="2.04" y="40.64" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER_3" value="WM7887DKR-ND" x="2.04" y="40.64" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="5013311007" x="2.04" y="40.64" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MFR_NAME" value="Molex Connector Corporation" x="2.04" y="40.64" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="12.3524" y="38.735" size="1.27" layer="27" ratio="6" rot="SR180"/>
 </element>
-<element name="J20" library="sbrio_backplane" package="CON_5013311007" value="5013311007" x="22.86" y="30.48" smashed="yes" rot="R90">
-<attribute name="COPYRIGHT" value="Copyright (C) 2022 Ultra Librarian. All rights reserved." x="22.86" y="30.48" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER_1" value="WM7887TR-ND" x="22.86" y="30.48" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER_2" value="WM7887CT-ND" x="22.86" y="30.48" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER_3" value="WM7887DKR-ND" x="22.86" y="30.48" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="5013311007" x="22.86" y="30.48" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MFR_NAME" value="Molex Connector Corporation" x="22.86" y="30.48" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="20.955" y="20.1676" size="1.27" layer="27" ratio="6" rot="SR90"/>
+<element name="J20" library="sbrio_backplane" package="CON_5013311007" value="5013311007" x="17.28" y="40.64" smashed="yes" rot="R180">
+<attribute name="COPYRIGHT" value="Copyright (C) 2022 Ultra Librarian. All rights reserved." x="17.28" y="40.64" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER_1" value="WM7887TR-ND" x="17.28" y="40.64" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER_2" value="WM7887CT-ND" x="17.28" y="40.64" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER_3" value="WM7887DKR-ND" x="17.28" y="40.64" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="5013311007" x="17.28" y="40.64" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MFR_NAME" value="Molex Connector Corporation" x="17.28" y="40.64" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="27.5924" y="38.735" size="1.27" layer="27" ratio="6" rot="SR180"/>
 </element>
-<element name="J21" library="sbrio_backplane" package="CON_5013311007" value="5013311007" x="33.02" y="30.48" smashed="yes" rot="R90">
-<attribute name="COPYRIGHT" value="Copyright (C) 2022 Ultra Librarian. All rights reserved." x="33.02" y="30.48" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER_1" value="WM7887TR-ND" x="33.02" y="30.48" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER_2" value="WM7887CT-ND" x="33.02" y="30.48" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER_3" value="WM7887DKR-ND" x="33.02" y="30.48" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="5013311007" x="33.02" y="30.48" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MFR_NAME" value="Molex Connector Corporation" x="33.02" y="30.48" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="31.115" y="20.1676" size="1.27" layer="27" ratio="6" rot="SR90"/>
+<element name="J21" library="sbrio_backplane" package="CON_5013311007" value="5013311007" x="32.52" y="40.64" smashed="yes" rot="R180">
+<attribute name="COPYRIGHT" value="Copyright (C) 2022 Ultra Librarian. All rights reserved." x="32.52" y="40.64" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER_1" value="WM7887TR-ND" x="32.52" y="40.64" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER_2" value="WM7887CT-ND" x="32.52" y="40.64" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER_3" value="WM7887DKR-ND" x="32.52" y="40.64" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="5013311007" x="32.52" y="40.64" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MFR_NAME" value="Molex Connector Corporation" x="32.52" y="40.64" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="42.8324" y="38.735" size="1.27" layer="27" ratio="6" rot="SR180"/>
 </element>
-<element name="J22" library="sbrio_backplane" package="CON_5013311007" value="5013311007" x="43.18" y="30.48" smashed="yes" rot="R90">
-<attribute name="COPYRIGHT" value="Copyright (C) 2022 Ultra Librarian. All rights reserved." x="43.18" y="30.48" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER_1" value="WM7887TR-ND" x="43.18" y="30.48" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER_2" value="WM7887CT-ND" x="43.18" y="30.48" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER_3" value="WM7887DKR-ND" x="43.18" y="30.48" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="5013311007" x="43.18" y="30.48" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MFR_NAME" value="Molex Connector Corporation" x="43.18" y="30.48" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="41.275" y="20.1676" size="1.27" layer="27" ratio="6" rot="SR90"/>
+<element name="J22" library="sbrio_backplane" package="CON_5013311007" value="5013311007" x="47.76" y="40.64" smashed="yes" rot="R180">
+<attribute name="COPYRIGHT" value="Copyright (C) 2022 Ultra Librarian. All rights reserved." x="47.76" y="40.64" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER_1" value="WM7887TR-ND" x="47.76" y="40.64" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER_2" value="WM7887CT-ND" x="47.76" y="40.64" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER_3" value="WM7887DKR-ND" x="47.76" y="40.64" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="5013311007" x="47.76" y="40.64" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MFR_NAME" value="Molex Connector Corporation" x="47.76" y="40.64" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="58.0724" y="38.735" size="1.27" layer="27" ratio="6" rot="SR180"/>
 </element>
-<element name="J23" library="sbrio_backplane" package="CON_5013311007" value="5013311007" x="53.34" y="30.48" smashed="yes" rot="R90">
-<attribute name="COPYRIGHT" value="Copyright (C) 2022 Ultra Librarian. All rights reserved." x="53.34" y="30.48" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER_1" value="WM7887TR-ND" x="53.34" y="30.48" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER_2" value="WM7887CT-ND" x="53.34" y="30.48" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER_3" value="WM7887DKR-ND" x="53.34" y="30.48" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="5013311007" x="53.34" y="30.48" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MFR_NAME" value="Molex Connector Corporation" x="53.34" y="30.48" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="51.435" y="20.1676" size="1.27" layer="27" ratio="6" rot="SR90"/>
+<element name="J23" library="sbrio_backplane" package="CON_5013311007" value="5013311007" x="63" y="40.64" smashed="yes" rot="R180">
+<attribute name="COPYRIGHT" value="Copyright (C) 2022 Ultra Librarian. All rights reserved." x="63" y="40.64" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER_1" value="WM7887TR-ND" x="63" y="40.64" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER_2" value="WM7887CT-ND" x="63" y="40.64" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER_3" value="WM7887DKR-ND" x="63" y="40.64" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="5013311007" x="63" y="40.64" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MFR_NAME" value="Molex Connector Corporation" x="63" y="40.64" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="73.3124" y="38.735" size="1.27" layer="27" ratio="6" rot="SR180"/>
 </element>
-<element name="RN1" library="sbrio_backplane" package="RESCAV80P320X160X70-8N" value="742C083470JP" x="15.24" y="83.82" smashed="yes" rot="MR180">
-<attribute name="DESCRIPTION" value=" 47 Ohm ±5% 62.5mW Power Per Element Isolated 4 Resistor Network/Array ±200ppm/°C 1206 (3216 Metric), Concave, Long Side Terminals " x="15.24" y="83.82" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER" value="742C083470JPTR-ND" x="15.24" y="83.82" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="MF" value="CTS Components" x="15.24" y="83.82" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="MP" value="742C083470JP" x="15.24" y="83.82" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="NAME" x="13.2171" y="82.17765" size="0.610475" layer="26" rot="MR180"/>
-<attribute name="PACKAGE" value="1206 CTS Resistor" x="15.24" y="83.82" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="PURCHASE-URL" value="https://pricing.snapeda.com/search/part/742C083470JP/?ref=eda" x="15.24" y="83.82" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="VALUE" x="13.221559375" y="86.86018125" size="0.610640625" layer="28" rot="MR180"/>
+<element name="RN1" library="sbrio_backplane" package="RESCAV80P320X160X70-8N" value="742C083470JP" x="6.515" y="81.55" smashed="yes" rot="MR180">
+<attribute name="DESCRIPTION" value=" 47 Ohm ±5% 62.5mW Power Per Element Isolated 4 Resistor Network/Array ±200ppm/°C 1206 (3216 Metric), Concave, Long Side Terminals " x="6.515" y="81.55" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER" value="742C083470JPTR-ND" x="6.515" y="81.55" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="MF" value="CTS Components" x="6.515" y="81.55" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="MP" value="742C083470JP" x="6.515" y="81.55" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="NAME" x="4.4921" y="79.90765" size="0.610475" layer="26" rot="MR180"/>
+<attribute name="PACKAGE" value="1206 CTS Resistor" x="6.515" y="81.55" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="PURCHASE-URL" value="https://pricing.snapeda.com/search/part/742C083470JP/?ref=eda" x="6.515" y="81.55" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="VALUE" x="4.496559375" y="84.59018125" size="0.610640625" layer="28" rot="MR180"/>
 </element>
-<element name="RN2" library="sbrio_backplane" package="RESCAV80P320X160X70-8N" value="742C083470JP" x="25.4" y="83.82" smashed="yes" rot="MR180">
-<attribute name="DESCRIPTION" value=" 47 Ohm ±5% 62.5mW Power Per Element Isolated 4 Resistor Network/Array ±200ppm/°C 1206 (3216 Metric), Concave, Long Side Terminals " x="25.4" y="83.82" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER" value="742C083470JPTR-ND" x="25.4" y="83.82" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="MF" value="CTS Components" x="25.4" y="83.82" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="MP" value="742C083470JP" x="25.4" y="83.82" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="NAME" x="23.3771" y="82.17765" size="0.610475" layer="26" rot="MR180"/>
-<attribute name="PACKAGE" value="1206 CTS Resistor" x="25.4" y="83.82" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="PURCHASE-URL" value="https://pricing.snapeda.com/search/part/742C083470JP/?ref=eda" x="25.4" y="83.82" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="VALUE" x="23.381559375" y="86.86018125" size="0.610640625" layer="28" rot="MR180"/>
+<element name="RN2" library="sbrio_backplane" package="RESCAV80P320X160X70-8N" value="742C083470JP" x="21.775" y="81.55" smashed="yes" rot="MR180">
+<attribute name="DESCRIPTION" value=" 47 Ohm ±5% 62.5mW Power Per Element Isolated 4 Resistor Network/Array ±200ppm/°C 1206 (3216 Metric), Concave, Long Side Terminals " x="21.775" y="81.55" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER" value="742C083470JPTR-ND" x="21.775" y="81.55" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="MF" value="CTS Components" x="21.775" y="81.55" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="MP" value="742C083470JP" x="21.775" y="81.55" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="NAME" x="19.7521" y="79.90765" size="0.610475" layer="26" rot="MR180"/>
+<attribute name="PACKAGE" value="1206 CTS Resistor" x="21.775" y="81.55" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="PURCHASE-URL" value="https://pricing.snapeda.com/search/part/742C083470JP/?ref=eda" x="21.775" y="81.55" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="VALUE" x="19.756559375" y="84.59018125" size="0.610640625" layer="28" rot="MR180"/>
 </element>
-<element name="RN3" library="sbrio_backplane" package="RESCAV80P320X160X70-8N" value="742C083470JP" x="35.56" y="83.82" smashed="yes" rot="MR180">
-<attribute name="DESCRIPTION" value=" 47 Ohm ±5% 62.5mW Power Per Element Isolated 4 Resistor Network/Array ±200ppm/°C 1206 (3216 Metric), Concave, Long Side Terminals " x="35.56" y="83.82" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER" value="742C083470JPTR-ND" x="35.56" y="83.82" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="MF" value="CTS Components" x="35.56" y="83.82" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="MP" value="742C083470JP" x="35.56" y="83.82" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="NAME" x="33.5371" y="82.17765" size="0.610475" layer="26" rot="MR180"/>
-<attribute name="PACKAGE" value="1206 CTS Resistor" x="35.56" y="83.82" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="PURCHASE-URL" value="https://pricing.snapeda.com/search/part/742C083470JP/?ref=eda" x="35.56" y="83.82" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="VALUE" x="33.541559375" y="86.86018125" size="0.610640625" layer="28" rot="MR180"/>
+<element name="RN3" library="sbrio_backplane" package="RESCAV80P320X160X70-8N" value="742C083470JP" x="37.035" y="81.55" smashed="yes" rot="MR180">
+<attribute name="DESCRIPTION" value=" 47 Ohm ±5% 62.5mW Power Per Element Isolated 4 Resistor Network/Array ±200ppm/°C 1206 (3216 Metric), Concave, Long Side Terminals " x="37.035" y="81.55" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER" value="742C083470JPTR-ND" x="37.035" y="81.55" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="MF" value="CTS Components" x="37.035" y="81.55" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="MP" value="742C083470JP" x="37.035" y="81.55" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="NAME" x="35.0121" y="79.90765" size="0.610475" layer="26" rot="MR180"/>
+<attribute name="PACKAGE" value="1206 CTS Resistor" x="37.035" y="81.55" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="PURCHASE-URL" value="https://pricing.snapeda.com/search/part/742C083470JP/?ref=eda" x="37.035" y="81.55" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="VALUE" x="35.016559375" y="84.59018125" size="0.610640625" layer="28" rot="MR180"/>
 </element>
-<element name="RN4" library="sbrio_backplane" package="RESCAV80P320X160X70-8N" value="742C083470JP" x="45.72" y="83.82" smashed="yes" rot="MR180">
-<attribute name="DESCRIPTION" value=" 47 Ohm ±5% 62.5mW Power Per Element Isolated 4 Resistor Network/Array ±200ppm/°C 1206 (3216 Metric), Concave, Long Side Terminals " x="45.72" y="83.82" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER" value="742C083470JPTR-ND" x="45.72" y="83.82" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="MF" value="CTS Components" x="45.72" y="83.82" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="MP" value="742C083470JP" x="45.72" y="83.82" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="NAME" x="43.6971" y="82.17765" size="0.610475" layer="26" rot="MR180"/>
-<attribute name="PACKAGE" value="1206 CTS Resistor" x="45.72" y="83.82" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="PURCHASE-URL" value="https://pricing.snapeda.com/search/part/742C083470JP/?ref=eda" x="45.72" y="83.82" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="VALUE" x="43.701559375" y="86.86018125" size="0.610640625" layer="28" rot="MR180"/>
+<element name="RN4" library="sbrio_backplane" package="RESCAV80P320X160X70-8N" value="742C083470JP" x="52.295" y="81.55" smashed="yes" rot="MR180">
+<attribute name="DESCRIPTION" value=" 47 Ohm ±5% 62.5mW Power Per Element Isolated 4 Resistor Network/Array ±200ppm/°C 1206 (3216 Metric), Concave, Long Side Terminals " x="52.295" y="81.55" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER" value="742C083470JPTR-ND" x="52.295" y="81.55" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="MF" value="CTS Components" x="52.295" y="81.55" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="MP" value="742C083470JP" x="52.295" y="81.55" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="NAME" x="50.2721" y="79.90765" size="0.610475" layer="26" rot="MR180"/>
+<attribute name="PACKAGE" value="1206 CTS Resistor" x="52.295" y="81.55" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="PURCHASE-URL" value="https://pricing.snapeda.com/search/part/742C083470JP/?ref=eda" x="52.295" y="81.55" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="VALUE" x="50.276559375" y="84.59018125" size="0.610640625" layer="28" rot="MR180"/>
 </element>
-<element name="RN5" library="sbrio_backplane" package="RESCAV80P320X160X70-8N" value="742C083470JP" x="55.88" y="83.82" smashed="yes" rot="MR180">
-<attribute name="DESCRIPTION" value=" 47 Ohm ±5% 62.5mW Power Per Element Isolated 4 Resistor Network/Array ±200ppm/°C 1206 (3216 Metric), Concave, Long Side Terminals " x="55.88" y="83.82" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER" value="742C083470JPTR-ND" x="55.88" y="83.82" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="MF" value="CTS Components" x="55.88" y="83.82" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="MP" value="742C083470JP" x="55.88" y="83.82" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="NAME" x="53.8571" y="82.17765" size="0.610475" layer="26" rot="MR180"/>
-<attribute name="PACKAGE" value="1206 CTS Resistor" x="55.88" y="83.82" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="PURCHASE-URL" value="https://pricing.snapeda.com/search/part/742C083470JP/?ref=eda" x="55.88" y="83.82" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="VALUE" x="53.861559375" y="86.86018125" size="0.610640625" layer="28" rot="MR180"/>
+<element name="RN5" library="sbrio_backplane" package="RESCAV80P320X160X70-8N" value="742C083470JP" x="67.555" y="81.55" smashed="yes" rot="MR180">
+<attribute name="DESCRIPTION" value=" 47 Ohm ±5% 62.5mW Power Per Element Isolated 4 Resistor Network/Array ±200ppm/°C 1206 (3216 Metric), Concave, Long Side Terminals " x="67.555" y="81.55" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER" value="742C083470JPTR-ND" x="67.555" y="81.55" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="MF" value="CTS Components" x="67.555" y="81.55" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="MP" value="742C083470JP" x="67.555" y="81.55" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="NAME" x="65.5321" y="79.90765" size="0.610475" layer="26" rot="MR180"/>
+<attribute name="PACKAGE" value="1206 CTS Resistor" x="67.555" y="81.55" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="PURCHASE-URL" value="https://pricing.snapeda.com/search/part/742C083470JP/?ref=eda" x="67.555" y="81.55" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="VALUE" x="65.536559375" y="84.59018125" size="0.610640625" layer="28" rot="MR180"/>
 </element>
-<element name="RN6" library="sbrio_backplane" package="RESCAV80P320X160X70-8N" value="742C083470JP" x="15.24" y="43.18" smashed="yes" rot="MR0">
-<attribute name="DESCRIPTION" value=" 47 Ohm ±5% 62.5mW Power Per Element Isolated 4 Resistor Network/Array ±200ppm/°C 1206 (3216 Metric), Concave, Long Side Terminals " x="15.24" y="43.18" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER" value="742C083470JPTR-ND" x="15.24" y="43.18" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="MF" value="CTS Components" x="15.24" y="43.18" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="MP" value="742C083470JP" x="15.24" y="43.18" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="NAME" x="17.2629" y="44.82235" size="0.610475" layer="26" rot="MR0"/>
-<attribute name="PACKAGE" value="1206 CTS Resistor" x="15.24" y="43.18" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="PURCHASE-URL" value="https://pricing.snapeda.com/search/part/742C083470JP/?ref=eda" x="15.24" y="43.18" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="VALUE" x="17.258440625" y="40.13981875" size="0.610640625" layer="28" rot="MR0"/>
+<element name="RN6" library="sbrio_backplane" package="RESCAV80P320X160X70-8N" value="742C083470JP" x="6.515" y="53.61" smashed="yes" rot="MR180">
+<attribute name="DESCRIPTION" value=" 47 Ohm ±5% 62.5mW Power Per Element Isolated 4 Resistor Network/Array ±200ppm/°C 1206 (3216 Metric), Concave, Long Side Terminals " x="6.515" y="53.61" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER" value="742C083470JPTR-ND" x="6.515" y="53.61" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="MF" value="CTS Components" x="6.515" y="53.61" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="MP" value="742C083470JP" x="6.515" y="53.61" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="NAME" x="4.4921" y="51.96765" size="0.610475" layer="26" rot="MR180"/>
+<attribute name="PACKAGE" value="1206 CTS Resistor" x="6.515" y="53.61" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="PURCHASE-URL" value="https://pricing.snapeda.com/search/part/742C083470JP/?ref=eda" x="6.515" y="53.61" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="VALUE" x="4.496559375" y="56.65018125" size="0.610640625" layer="28" rot="MR180"/>
 </element>
-<element name="RN7" library="sbrio_backplane" package="RESCAV80P320X160X70-8N" value="742C083470JP" x="25.4" y="43.18" smashed="yes" rot="MR0">
-<attribute name="DESCRIPTION" value=" 47 Ohm ±5% 62.5mW Power Per Element Isolated 4 Resistor Network/Array ±200ppm/°C 1206 (3216 Metric), Concave, Long Side Terminals " x="25.4" y="43.18" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER" value="742C083470JPTR-ND" x="25.4" y="43.18" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="MF" value="CTS Components" x="25.4" y="43.18" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="MP" value="742C083470JP" x="25.4" y="43.18" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="NAME" x="27.4229" y="44.82235" size="0.610475" layer="26" rot="MR0"/>
-<attribute name="PACKAGE" value="1206 CTS Resistor" x="25.4" y="43.18" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="PURCHASE-URL" value="https://pricing.snapeda.com/search/part/742C083470JP/?ref=eda" x="25.4" y="43.18" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="VALUE" x="27.418440625" y="40.13981875" size="0.610640625" layer="28" rot="MR0"/>
+<element name="RN7" library="sbrio_backplane" package="RESCAV80P320X160X70-8N" value="742C083470JP" x="21.775" y="53.61" smashed="yes" rot="MR180">
+<attribute name="DESCRIPTION" value=" 47 Ohm ±5% 62.5mW Power Per Element Isolated 4 Resistor Network/Array ±200ppm/°C 1206 (3216 Metric), Concave, Long Side Terminals " x="21.775" y="53.61" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER" value="742C083470JPTR-ND" x="21.775" y="53.61" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="MF" value="CTS Components" x="21.775" y="53.61" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="MP" value="742C083470JP" x="21.775" y="53.61" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="NAME" x="19.7521" y="51.96765" size="0.610475" layer="26" rot="MR180"/>
+<attribute name="PACKAGE" value="1206 CTS Resistor" x="21.775" y="53.61" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="PURCHASE-URL" value="https://pricing.snapeda.com/search/part/742C083470JP/?ref=eda" x="21.775" y="53.61" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="VALUE" x="19.756559375" y="56.65018125" size="0.610640625" layer="28" rot="MR180"/>
 </element>
-<element name="RN8" library="sbrio_backplane" package="RESCAV80P320X160X70-8N" value="742C083470JP" x="35.56" y="43.18" smashed="yes" rot="MR0">
-<attribute name="DESCRIPTION" value=" 47 Ohm ±5% 62.5mW Power Per Element Isolated 4 Resistor Network/Array ±200ppm/°C 1206 (3216 Metric), Concave, Long Side Terminals " x="35.56" y="43.18" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER" value="742C083470JPTR-ND" x="35.56" y="43.18" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="MF" value="CTS Components" x="35.56" y="43.18" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="MP" value="742C083470JP" x="35.56" y="43.18" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="NAME" x="37.5829" y="44.82235" size="0.610475" layer="26" rot="MR0"/>
-<attribute name="PACKAGE" value="1206 CTS Resistor" x="35.56" y="43.18" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="PURCHASE-URL" value="https://pricing.snapeda.com/search/part/742C083470JP/?ref=eda" x="35.56" y="43.18" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="VALUE" x="37.578440625" y="40.13981875" size="0.610640625" layer="28" rot="MR0"/>
+<element name="RN8" library="sbrio_backplane" package="RESCAV80P320X160X70-8N" value="742C083470JP" x="37.035" y="53.61" smashed="yes" rot="MR180">
+<attribute name="DESCRIPTION" value=" 47 Ohm ±5% 62.5mW Power Per Element Isolated 4 Resistor Network/Array ±200ppm/°C 1206 (3216 Metric), Concave, Long Side Terminals " x="37.035" y="53.61" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER" value="742C083470JPTR-ND" x="37.035" y="53.61" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="MF" value="CTS Components" x="37.035" y="53.61" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="MP" value="742C083470JP" x="37.035" y="53.61" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="NAME" x="35.0121" y="51.96765" size="0.610475" layer="26" rot="MR180"/>
+<attribute name="PACKAGE" value="1206 CTS Resistor" x="37.035" y="53.61" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="PURCHASE-URL" value="https://pricing.snapeda.com/search/part/742C083470JP/?ref=eda" x="37.035" y="53.61" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="VALUE" x="35.016559375" y="56.65018125" size="0.610640625" layer="28" rot="MR180"/>
 </element>
-<element name="RN9" library="sbrio_backplane" package="RESCAV80P320X160X70-8N" value="742C083470JP" x="45.72" y="43.18" smashed="yes" rot="MR0">
-<attribute name="DESCRIPTION" value=" 47 Ohm ±5% 62.5mW Power Per Element Isolated 4 Resistor Network/Array ±200ppm/°C 1206 (3216 Metric), Concave, Long Side Terminals " x="45.72" y="43.18" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER" value="742C083470JPTR-ND" x="45.72" y="43.18" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="MF" value="CTS Components" x="45.72" y="43.18" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="MP" value="742C083470JP" x="45.72" y="43.18" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="NAME" x="47.7429" y="44.82235" size="0.610475" layer="26" rot="MR0"/>
-<attribute name="PACKAGE" value="1206 CTS Resistor" x="45.72" y="43.18" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="PURCHASE-URL" value="https://pricing.snapeda.com/search/part/742C083470JP/?ref=eda" x="45.72" y="43.18" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="VALUE" x="47.738440625" y="40.13981875" size="0.610640625" layer="28" rot="MR0"/>
+<element name="RN9" library="sbrio_backplane" package="RESCAV80P320X160X70-8N" value="742C083470JP" x="52.295" y="53.61" smashed="yes" rot="MR180">
+<attribute name="DESCRIPTION" value=" 47 Ohm ±5% 62.5mW Power Per Element Isolated 4 Resistor Network/Array ±200ppm/°C 1206 (3216 Metric), Concave, Long Side Terminals " x="52.295" y="53.61" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER" value="742C083470JPTR-ND" x="52.295" y="53.61" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="MF" value="CTS Components" x="52.295" y="53.61" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="MP" value="742C083470JP" x="52.295" y="53.61" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="NAME" x="50.2721" y="51.96765" size="0.610475" layer="26" rot="MR180"/>
+<attribute name="PACKAGE" value="1206 CTS Resistor" x="52.295" y="53.61" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="PURCHASE-URL" value="https://pricing.snapeda.com/search/part/742C083470JP/?ref=eda" x="52.295" y="53.61" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="VALUE" x="50.276559375" y="56.65018125" size="0.610640625" layer="28" rot="MR180"/>
 </element>
-<element name="RN10" library="sbrio_backplane" package="RESCAV80P320X160X70-8N" value="742C083470JP" x="55.88" y="43.18" smashed="yes" rot="MR0">
-<attribute name="DESCRIPTION" value=" 47 Ohm ±5% 62.5mW Power Per Element Isolated 4 Resistor Network/Array ±200ppm/°C 1206 (3216 Metric), Concave, Long Side Terminals " x="55.88" y="43.18" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER" value="742C083470JPTR-ND" x="55.88" y="43.18" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="MF" value="CTS Components" x="55.88" y="43.18" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="MP" value="742C083470JP" x="55.88" y="43.18" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="NAME" x="57.9029" y="44.82235" size="0.610475" layer="26" rot="MR0"/>
-<attribute name="PACKAGE" value="1206 CTS Resistor" x="55.88" y="43.18" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="PURCHASE-URL" value="https://pricing.snapeda.com/search/part/742C083470JP/?ref=eda" x="55.88" y="43.18" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="VALUE" x="57.898440625" y="40.13981875" size="0.610640625" layer="28" rot="MR0"/>
+<element name="RN10" library="sbrio_backplane" package="RESCAV80P320X160X70-8N" value="742C083470JP" x="67.555" y="53.61" smashed="yes" rot="MR180">
+<attribute name="DESCRIPTION" value=" 47 Ohm ±5% 62.5mW Power Per Element Isolated 4 Resistor Network/Array ±200ppm/°C 1206 (3216 Metric), Concave, Long Side Terminals " x="67.555" y="53.61" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER" value="742C083470JPTR-ND" x="67.555" y="53.61" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="MF" value="CTS Components" x="67.555" y="53.61" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="MP" value="742C083470JP" x="67.555" y="53.61" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="NAME" x="65.5321" y="51.96765" size="0.610475" layer="26" rot="MR180"/>
+<attribute name="PACKAGE" value="1206 CTS Resistor" x="67.555" y="53.61" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="PURCHASE-URL" value="https://pricing.snapeda.com/search/part/742C083470JP/?ref=eda" x="67.555" y="53.61" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="VALUE" x="65.536559375" y="56.65018125" size="0.610640625" layer="28" rot="MR180"/>
+</element>
+<element name="J25" library="sbrio_backplane" package="CON_5055670271" value="5055670271" x="53.34" y="3.81" smashed="yes" rot="R180">
+<attribute name="COPYRIGHT" value="Copyright (C) 2022 Ultra Librarian. All rights reserved." x="53.34" y="3.81" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER_1" value="WM17038TR-ND" x="53.34" y="3.81" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER_2" value="WM17038CT-ND" x="53.34" y="3.81" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER_3" value="WM17038DKR-ND" x="53.34" y="3.81" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="5055670271" x="53.34" y="3.81" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MFR_NAME" value="Molex Connector Corporation" x="53.34" y="3.81" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="58.3438" y="0.635" size="1.27" layer="27" ratio="6" rot="SR0"/>
 </element>
 </elements>
 <signals>
-<signal name="GND">
+<signal name="GND" airwireshidden="yes">
 <contactref element="U1" pad="8"/>
 <contactref element="U2" pad="8"/>
 <contactref element="U3" pad="8"/>
@@ -1519,15 +1569,115 @@ design rules under a new name.</description>
 <contactref element="U8" pad="8"/>
 <contactref element="U9" pad="8"/>
 <contactref element="U10" pad="8"/>
-<wire x1="42.799" y1="40.375" x2="52.959" y2="40.375" width="0" layer="19" extent="1-1"/>
-<wire x1="32.639" y1="40.375" x2="42.799" y2="40.375" width="0" layer="19" extent="1-1"/>
-<wire x1="22.479" y1="40.375" x2="32.639" y2="40.375" width="0" layer="19" extent="1-1"/>
-<wire x1="12.319" y1="40.375" x2="22.479" y2="40.375" width="0" layer="19" extent="1-1"/>
-<wire x1="52.959" y1="81.015" x2="12.319" y2="40.375" width="0" layer="19" extent="1-1"/>
-<wire x1="42.799" y1="81.015" x2="52.959" y2="81.015" width="0" layer="19" extent="1-1"/>
-<wire x1="32.639" y1="81.015" x2="42.799" y2="81.015" width="0" layer="19" extent="1-1"/>
-<wire x1="22.479" y1="81.015" x2="32.639" y2="81.015" width="0" layer="19" extent="1-1"/>
-<wire x1="12.319" y1="81.015" x2="22.479" y2="81.015" width="0" layer="19" extent="1-1"/>
+<contactref element="J13" pad="9"/>
+<contactref element="J13" pad="10"/>
+<contactref element="J12" pad="10"/>
+<contactref element="J12" pad="9"/>
+<contactref element="J11" pad="10"/>
+<contactref element="J11" pad="9"/>
+<contactref element="J10" pad="10"/>
+<contactref element="J10" pad="9"/>
+<contactref element="J9" pad="10"/>
+<contactref element="J9" pad="9"/>
+<contactref element="J23" pad="12"/>
+<contactref element="J23" pad="11"/>
+<contactref element="J22" pad="12"/>
+<contactref element="J22" pad="11"/>
+<contactref element="J21" pad="12"/>
+<contactref element="J21" pad="11"/>
+<contactref element="J20" pad="12"/>
+<contactref element="J20" pad="11"/>
+<contactref element="J19" pad="12"/>
+<contactref element="J19" pad="11"/>
+<contactref element="J8" pad="10"/>
+<contactref element="J8" pad="9"/>
+<contactref element="J7" pad="9"/>
+<contactref element="J7" pad="10"/>
+<contactref element="J6" pad="10"/>
+<contactref element="J6" pad="9"/>
+<contactref element="J5" pad="10"/>
+<contactref element="J5" pad="9"/>
+<contactref element="J4" pad="10"/>
+<contactref element="J4" pad="9"/>
+<contactref element="J18" pad="12"/>
+<contactref element="J18" pad="11"/>
+<contactref element="J17" pad="12"/>
+<contactref element="J17" pad="11"/>
+<contactref element="J16" pad="12"/>
+<contactref element="J16" pad="11"/>
+<contactref element="J15" pad="12"/>
+<contactref element="J15" pad="11"/>
+<contactref element="J14" pad="12"/>
+<contactref element="J14" pad="11"/>
+<contactref element="J23" pad="1"/>
+<contactref element="J22" pad="1"/>
+<contactref element="J21" pad="1"/>
+<contactref element="J20" pad="1"/>
+<contactref element="J19" pad="1"/>
+<contactref element="J18" pad="1"/>
+<contactref element="J17" pad="1"/>
+<contactref element="J16" pad="1"/>
+<contactref element="J15" pad="1"/>
+<contactref element="J14" pad="1"/>
+<wire x1="64.524" y1="74.695" x2="73.3" y2="71.105" width="0" layer="19" extent="1-1"/>
+<wire x1="61.7" y1="71.105" x2="64.524" y2="74.695" width="0" layer="19" extent="1-1"/>
+<wire x1="63" y1="68.58" x2="61.7" y2="71.105" width="0" layer="19" extent="1-1"/>
+<wire x1="58.06" y1="71.105" x2="61.7" y2="71.105" width="0" layer="19" extent="1-1"/>
+<wire x1="61.685" y1="60.975" x2="63" y2="68.58" width="0" layer="19" extent="1-1"/>
+<wire x1="56.045" y1="60.975" x2="61.685" y2="60.975" width="0" layer="19" extent="1-1"/>
+<wire x1="49.284" y1="74.695" x2="58.06" y2="71.105" width="0" layer="19" extent="1-1"/>
+<wire x1="46.46" y1="71.105" x2="49.284" y2="74.695" width="0" layer="19" extent="1-1"/>
+<wire x1="47.76" y1="68.58" x2="46.46" y2="71.105" width="0" layer="19" extent="1-1"/>
+<wire x1="42.82" y1="71.105" x2="46.46" y2="71.105" width="0" layer="19" extent="1-1"/>
+<wire x1="46.445" y1="60.975" x2="47.76" y2="68.58" width="0" layer="19" extent="1-1"/>
+<wire x1="40.805" y1="60.975" x2="46.445" y2="60.975" width="0" layer="19" extent="1-1"/>
+<wire x1="34.044" y1="74.695" x2="42.82" y2="71.105" width="0" layer="19" extent="1-1"/>
+<wire x1="31.22" y1="71.105" x2="34.044" y2="74.695" width="0" layer="19" extent="1-1"/>
+<wire x1="32.52" y1="68.58" x2="31.22" y2="71.105" width="0" layer="19" extent="1-1"/>
+<wire x1="27.58" y1="71.105" x2="31.22" y2="71.105" width="0" layer="19" extent="1-1"/>
+<wire x1="31.205" y1="60.975" x2="32.52" y2="68.58" width="0" layer="19" extent="1-1"/>
+<wire x1="25.565" y1="60.975" x2="31.205" y2="60.975" width="0" layer="19" extent="1-1"/>
+<wire x1="18.804" y1="74.695" x2="27.58" y2="71.105" width="0" layer="19" extent="1-1"/>
+<wire x1="15.98" y1="71.105" x2="18.804" y2="74.695" width="0" layer="19" extent="1-1"/>
+<wire x1="17.28" y1="68.58" x2="15.98" y2="71.105" width="0" layer="19" extent="1-1"/>
+<wire x1="12.34" y1="71.105" x2="15.98" y2="71.105" width="0" layer="19" extent="1-1"/>
+<wire x1="15.965" y1="60.975" x2="17.28" y2="68.58" width="0" layer="19" extent="1-1"/>
+<wire x1="10.325" y1="60.975" x2="15.965" y2="60.975" width="0" layer="19" extent="1-1"/>
+<wire x1="3.564" y1="74.695" x2="12.34" y2="71.105" width="0" layer="19" extent="1-1"/>
+<wire x1="0.74" y1="71.105" x2="3.564" y2="74.695" width="0" layer="19" extent="1-1"/>
+<wire x1="2.04" y1="68.58" x2="0.74" y2="71.105" width="0" layer="19" extent="1-1"/>
+<wire x1="0.725" y1="60.975" x2="2.04" y2="68.58" width="0" layer="19" extent="1-1"/>
+<wire x1="71.285" y1="60.975" x2="61.685" y2="60.975" width="0" layer="19" extent="1-1"/>
+<wire x1="64.524" y1="46.755" x2="61.685" y2="60.975" width="0" layer="19" extent="1-1"/>
+<wire x1="61.7" y1="43.165" x2="64.524" y2="46.755" width="0" layer="19" extent="1-1"/>
+<wire x1="63" y1="40.64" x2="61.7" y2="43.165" width="0" layer="19" extent="1-1"/>
+<wire x1="58.06" y1="43.165" x2="61.7" y2="43.165" width="0" layer="19" extent="1-1"/>
+<wire x1="61.685" y1="33.035" x2="63" y2="40.64" width="0" layer="19" extent="1-1"/>
+<wire x1="56.045" y1="33.035" x2="61.685" y2="33.035" width="0" layer="19" extent="1-1"/>
+<wire x1="73.3" y1="43.165" x2="64.524" y2="46.755" width="0" layer="19" extent="1-1"/>
+<wire x1="49.284" y1="46.755" x2="58.06" y2="43.165" width="0" layer="19" extent="1-1"/>
+<wire x1="46.46" y1="43.165" x2="49.284" y2="46.755" width="0" layer="19" extent="1-1"/>
+<wire x1="47.76" y1="40.64" x2="46.46" y2="43.165" width="0" layer="19" extent="1-1"/>
+<wire x1="42.82" y1="43.165" x2="46.46" y2="43.165" width="0" layer="19" extent="1-1"/>
+<wire x1="46.445" y1="33.035" x2="47.76" y2="40.64" width="0" layer="19" extent="1-1"/>
+<wire x1="40.805" y1="33.035" x2="46.445" y2="33.035" width="0" layer="19" extent="1-1"/>
+<wire x1="34.044" y1="46.755" x2="42.82" y2="43.165" width="0" layer="19" extent="1-1"/>
+<wire x1="31.22" y1="43.165" x2="34.044" y2="46.755" width="0" layer="19" extent="1-1"/>
+<wire x1="32.52" y1="40.64" x2="31.22" y2="43.165" width="0" layer="19" extent="1-1"/>
+<wire x1="27.58" y1="43.165" x2="31.22" y2="43.165" width="0" layer="19" extent="1-1"/>
+<wire x1="31.205" y1="33.035" x2="32.52" y2="40.64" width="0" layer="19" extent="1-1"/>
+<wire x1="25.565" y1="33.035" x2="31.205" y2="33.035" width="0" layer="19" extent="1-1"/>
+<wire x1="18.804" y1="46.755" x2="27.58" y2="43.165" width="0" layer="19" extent="1-1"/>
+<wire x1="15.98" y1="43.165" x2="18.804" y2="46.755" width="0" layer="19" extent="1-1"/>
+<wire x1="17.28" y1="40.64" x2="15.98" y2="43.165" width="0" layer="19" extent="1-1"/>
+<wire x1="12.34" y1="43.165" x2="15.98" y2="43.165" width="0" layer="19" extent="1-1"/>
+<wire x1="15.965" y1="33.035" x2="17.28" y2="40.64" width="0" layer="19" extent="1-1"/>
+<wire x1="10.325" y1="33.035" x2="15.965" y2="33.035" width="0" layer="19" extent="1-1"/>
+<wire x1="3.564" y1="46.755" x2="12.34" y2="43.165" width="0" layer="19" extent="1-1"/>
+<wire x1="0.74" y1="43.165" x2="3.564" y2="46.755" width="0" layer="19" extent="1-1"/>
+<wire x1="2.04" y1="40.64" x2="0.74" y2="43.165" width="0" layer="19" extent="1-1"/>
+<wire x1="0.725" y1="33.035" x2="2.04" y2="40.64" width="0" layer="19" extent="1-1"/>
+<wire x1="71.285" y1="33.035" x2="61.685" y2="33.035" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VCC">
 <contactref element="U1" pad="16"/>
@@ -1540,15 +1690,594 @@ design rules under a new name.</description>
 <contactref element="U8" pad="16"/>
 <contactref element="U9" pad="16"/>
 <contactref element="U10" pad="16"/>
-<wire x1="48.641" y1="35.825" x2="58.801" y2="35.825" width="0" layer="19" extent="1-1"/>
-<wire x1="38.481" y1="35.825" x2="48.641" y2="35.825" width="0" layer="19" extent="1-1"/>
-<wire x1="28.321" y1="35.825" x2="38.481" y2="35.825" width="0" layer="19" extent="1-1"/>
-<wire x1="18.161" y1="35.825" x2="28.321" y2="35.825" width="0" layer="19" extent="1-1"/>
-<wire x1="58.801" y1="76.465" x2="18.161" y2="35.825" width="0" layer="19" extent="1-1"/>
-<wire x1="48.641" y1="76.465" x2="58.801" y2="76.465" width="0" layer="19" extent="1-1"/>
-<wire x1="38.481" y1="76.465" x2="48.641" y2="76.465" width="0" layer="19" extent="1-1"/>
-<wire x1="28.321" y1="76.465" x2="38.481" y2="76.465" width="0" layer="19" extent="1-1"/>
-<wire x1="18.161" y1="76.465" x2="28.321" y2="76.465" width="0" layer="19" extent="1-1"/>
+<wire x1="55.126" y1="51.305" x2="70.366" y2="51.305" width="0" layer="19" extent="1-1"/>
+<wire x1="39.886" y1="51.305" x2="55.126" y2="51.305" width="0" layer="19" extent="1-1"/>
+<wire x1="24.646" y1="51.305" x2="39.886" y2="51.305" width="0" layer="19" extent="1-1"/>
+<wire x1="9.406" y1="51.305" x2="24.646" y2="51.305" width="0" layer="19" extent="1-1"/>
+<wire x1="70.366" y1="79.245" x2="9.406" y2="51.305" width="0" layer="19" extent="1-1"/>
+<wire x1="55.126" y1="79.245" x2="70.366" y2="79.245" width="0" layer="19" extent="1-1"/>
+<wire x1="39.886" y1="79.245" x2="55.126" y2="79.245" width="0" layer="19" extent="1-1"/>
+<wire x1="24.646" y1="79.245" x2="39.886" y2="79.245" width="0" layer="19" extent="1-1"/>
+<wire x1="9.406" y1="79.245" x2="24.646" y2="79.245" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="MA_M1_P">
+<contactref element="J13" pad="1"/>
+<contactref element="J23" pad="6"/>
+<wire x1="69.985" y1="35.56" x2="68" y2="40.64" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="MA_M1_N">
+<contactref element="J13" pad="2"/>
+<contactref element="J23" pad="5"/>
+<wire x1="68.985" y1="35.56" x2="67" y2="40.64" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="SLO_M1_P">
+<contactref element="J13" pad="3"/>
+<contactref element="J23" pad="4"/>
+<wire x1="67.985" y1="35.56" x2="66" y2="40.64" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="SLO_M1_N">
+<contactref element="J13" pad="4"/>
+<contactref element="J23" pad="3"/>
+<wire x1="66.985" y1="35.56" x2="65" y2="40.64" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="ESTP+">
+<contactref element="J13" pad="5"/>
+<contactref element="J12" pad="5"/>
+<contactref element="J11" pad="5"/>
+<contactref element="J10" pad="5"/>
+<contactref element="J9" pad="5"/>
+<contactref element="J8" pad="5"/>
+<contactref element="J7" pad="5"/>
+<contactref element="J6" pad="5"/>
+<contactref element="J5" pad="5"/>
+<contactref element="J4" pad="5"/>
+<wire x1="52.885" y1="59.535" x2="50.745" y2="61.675" width="0.2" layer="1"/>
+<wire x1="52.885" y1="59.535" x2="56.8" y2="59.535" width="0.2" layer="1"/>
+<wire x1="58.67" y1="61.405" x2="58.67" y2="63.555" width="0.2" layer="1"/>
+<wire x1="58.67" y1="63.555" x2="60.45" y2="65.335" width="0.2" layer="1"/>
+<wire x1="65.985" y1="64.565" x2="65.985" y2="63.5" width="0.2" layer="1"/>
+<wire x1="56.8" y1="59.535" x2="58.67" y2="61.405" width="0.2" layer="1"/>
+<wire x1="60.45" y1="65.335" x2="65.215" y2="65.335" width="0.2" layer="1"/>
+<wire x1="65.215" y1="65.335" x2="65.985" y2="64.565" width="0.2" layer="1"/>
+<wire x1="41.585" y1="59.625" x2="37.67" y2="59.625" width="0.2" layer="1"/>
+<wire x1="43.455" y1="61.495" x2="43.455" y2="63.645" width="0.2" layer="1"/>
+<wire x1="43.455" y1="63.645" x2="45.235" y2="65.425" width="0.2" layer="1"/>
+<wire x1="41.585" y1="59.625" x2="43.455" y2="61.495" width="0.2" layer="1"/>
+<wire x1="45.235" y1="65.425" x2="50" y2="65.425" width="0.2" layer="1"/>
+<wire x1="50" y1="65.425" x2="50.745" y2="64.68" width="0.2" layer="1"/>
+<wire x1="20.265" y1="61.73" x2="22.43" y2="59.565" width="0.2" layer="1"/>
+<wire x1="22.43" y1="59.565" x2="26.345" y2="59.565" width="0.2" layer="1"/>
+<wire x1="28.215" y1="61.435" x2="28.215" y2="63.585" width="0.2" layer="1"/>
+<wire x1="28.215" y1="63.585" x2="29.995" y2="65.365" width="0.2" layer="1"/>
+<wire x1="26.345" y1="59.565" x2="28.215" y2="61.435" width="0.2" layer="1"/>
+<wire x1="29.995" y1="65.365" x2="34.76" y2="65.365" width="0.2" layer="1"/>
+<wire x1="34.76" y1="65.365" x2="35.53" y2="64.595" width="0.2" layer="1"/>
+<wire x1="11.13" y1="59.655" x2="7.215" y2="59.655" width="0.2" layer="1"/>
+<wire x1="13" y1="61.525" x2="13" y2="63.675" width="0.2" layer="1"/>
+<wire x1="13" y1="63.675" x2="14.78" y2="65.455" width="0.2" layer="1"/>
+<wire x1="11.13" y1="59.655" x2="13" y2="61.525" width="0.2" layer="1"/>
+<wire x1="14.78" y1="65.455" x2="19.545" y2="65.455" width="0.2" layer="1"/>
+<wire x1="19.545" y1="65.455" x2="20.315" y2="64.685" width="0.2" layer="1"/>
+<wire x1="50.745" y1="64.68" x2="50.745" y2="63.5" width="0.2" layer="1"/>
+<wire x1="50.745" y1="61.675" x2="50.745" y2="63.5" width="0.2" layer="1"/>
+<wire x1="35.505" y1="61.79" x2="35.505" y2="63.5" width="0.2" layer="1"/>
+<wire x1="37.67" y1="59.625" x2="35.505" y2="61.79" width="0.2" layer="1"/>
+<wire x1="35.53" y1="64.595" x2="35.53" y2="63.525" width="0.2" layer="1"/>
+<wire x1="35.53" y1="63.525" x2="35.505" y2="63.5" width="0.2" layer="1"/>
+<wire x1="20.265" y1="61.73" x2="20.265" y2="63" width="0.2" layer="1"/>
+<wire x1="20.265" y1="63" x2="20.265" y2="63.5" width="0.2" layer="1"/>
+<wire x1="20.315" y1="64.685" x2="20.315" y2="63.05" width="0.2" layer="1"/>
+<wire x1="20.315" y1="63.05" x2="20.265" y2="63" width="0.2" layer="1"/>
+<wire x1="5.025" y1="61.845" x2="5.025" y2="63.5" width="0.2" layer="1"/>
+<wire x1="7.215" y1="59.655" x2="5.025" y2="61.845" width="0.2" layer="1"/>
+<wire x1="52.885" y1="31.535" x2="50.745" y2="33.675" width="0.2" layer="1"/>
+<wire x1="52.885" y1="31.535" x2="56.8" y2="31.535" width="0.2" layer="1"/>
+<wire x1="58.67" y1="33.405" x2="58.67" y2="35.555" width="0.2" layer="1"/>
+<wire x1="58.67" y1="35.555" x2="60.45" y2="37.335" width="0.2" layer="1"/>
+<wire x1="56.8" y1="31.535" x2="58.67" y2="33.405" width="0.2" layer="1"/>
+<wire x1="60.45" y1="37.335" x2="65.215" y2="37.335" width="0.2" layer="1"/>
+<wire x1="65.215" y1="37.335" x2="65.985" y2="36.565" width="0.2" layer="1"/>
+<wire x1="41.585" y1="31.625" x2="37.67" y2="31.625" width="0.2" layer="1"/>
+<wire x1="43.455" y1="33.495" x2="43.455" y2="35.645" width="0.2" layer="1"/>
+<wire x1="43.455" y1="35.645" x2="45.235" y2="37.425" width="0.2" layer="1"/>
+<wire x1="41.585" y1="31.625" x2="43.455" y2="33.495" width="0.2" layer="1"/>
+<wire x1="45.235" y1="37.425" x2="50" y2="37.425" width="0.2" layer="1"/>
+<wire x1="50" y1="37.425" x2="50.745" y2="36.68" width="0.2" layer="1"/>
+<wire x1="20.265" y1="33.73" x2="22.43" y2="31.565" width="0.2" layer="1"/>
+<wire x1="22.43" y1="31.565" x2="26.345" y2="31.565" width="0.2" layer="1"/>
+<wire x1="28.215" y1="33.435" x2="28.215" y2="35.585" width="0.2" layer="1"/>
+<wire x1="28.215" y1="35.585" x2="29.995" y2="37.365" width="0.2" layer="1"/>
+<wire x1="26.345" y1="31.565" x2="28.215" y2="33.435" width="0.2" layer="1"/>
+<wire x1="29.995" y1="37.365" x2="34.76" y2="37.365" width="0.2" layer="1"/>
+<wire x1="34.76" y1="37.365" x2="35.53" y2="36.595" width="0.2" layer="1"/>
+<wire x1="11.13" y1="31.655" x2="7.215" y2="31.655" width="0.2" layer="1"/>
+<wire x1="13" y1="33.525" x2="13" y2="35.675" width="0.2" layer="1"/>
+<wire x1="13" y1="35.675" x2="14.78" y2="37.455" width="0.2" layer="1"/>
+<wire x1="11.13" y1="31.655" x2="13" y2="33.525" width="0.2" layer="1"/>
+<wire x1="14.78" y1="37.455" x2="19.545" y2="37.455" width="0.2" layer="1"/>
+<wire x1="19.545" y1="37.455" x2="20.315" y2="36.685" width="0.2" layer="1"/>
+<wire x1="37.67" y1="31.625" x2="35.505" y2="33.79" width="0.2" layer="1"/>
+<wire x1="35.53" y1="35.525" x2="35.505" y2="35.5" width="0.2" layer="1"/>
+<wire x1="20.265" y1="35.5" x2="20.265" y2="35" width="0.2" layer="1"/>
+<wire x1="20.315" y1="35.05" x2="20.265" y2="35" width="0.2" layer="1"/>
+<wire x1="7.215" y1="31.655" x2="5.025" y2="33.845" width="0.2" layer="1"/>
+<wire x1="65.985" y1="36.565" x2="65.985" y2="35.56" width="0.2" layer="1"/>
+<wire x1="50.745" y1="36.68" x2="50.745" y2="35.56" width="0.2" layer="1"/>
+<wire x1="50.745" y1="33.675" x2="50.745" y2="35.56" width="0.2" layer="1"/>
+<wire x1="35.505" y1="33.79" x2="35.505" y2="35" width="0.2" layer="1"/>
+<wire x1="35.505" y1="35" x2="35.505" y2="35.56" width="0.2" layer="1"/>
+<wire x1="35.53" y1="36.595" x2="35.53" y2="35.025" width="0.2" layer="1"/>
+<wire x1="35.53" y1="35.025" x2="35.505" y2="35" width="0.2" layer="1"/>
+<wire x1="20.265" y1="33.73" x2="20.265" y2="35" width="0.2" layer="1"/>
+<wire x1="20.315" y1="36.685" x2="20.315" y2="35.55" width="0.2" layer="1"/>
+<wire x1="20.315" y1="35.55" x2="20.265" y2="35.5" width="0.2" layer="1"/>
+<wire x1="5.025" y1="33.845" x2="5.025" y2="35.56" width="0.2" layer="1"/>
+<wire x1="35.505" y1="35.56" x2="35.53" y2="35.525" width="0" layer="19" extent="1-1"/>
+<wire x1="20.265" y1="35.56" x2="20.315" y2="35.05" width="0" layer="19" extent="1-1"/>
+<wire x1="65.985" y1="63.5" x2="65.985" y2="35.56" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="ESTP-">
+<contactref element="J13" pad="6"/>
+<contactref element="J12" pad="6"/>
+<contactref element="J11" pad="6"/>
+<contactref element="J10" pad="6"/>
+<contactref element="J9" pad="6"/>
+<contactref element="J8" pad="6"/>
+<contactref element="J7" pad="6"/>
+<contactref element="J6" pad="6"/>
+<contactref element="J5" pad="6"/>
+<contactref element="J4" pad="6"/>
+<wire x1="64.985" y1="63.5" x2="64.985" y2="64.395" width="0.2" layer="1"/>
+<wire x1="64.555" y1="64.825" x2="60.67" y2="64.825" width="0.2" layer="1"/>
+<wire x1="60.67" y1="64.825" x2="59.145" y2="63.3" width="0.2" layer="1"/>
+<wire x1="57.07" y1="59.085" x2="52.525" y2="59.085" width="0.2" layer="1"/>
+<wire x1="52.525" y1="59.085" x2="49.745" y2="61.865" width="0.2" layer="1"/>
+<wire x1="64.985" y1="64.395" x2="64.555" y2="64.825" width="0.2" layer="1"/>
+<wire x1="59.145" y1="63.3" x2="59.145" y2="61.16" width="0.2" layer="1"/>
+<wire x1="59.145" y1="61.16" x2="57.07" y2="59.085" width="0.2" layer="1"/>
+<wire x1="49.34" y1="64.915" x2="45.455" y2="64.915" width="0.2" layer="1"/>
+<wire x1="45.455" y1="64.915" x2="43.93" y2="63.39" width="0.2" layer="1"/>
+<wire x1="41.855" y1="59.175" x2="37.31" y2="59.175" width="0.2" layer="1"/>
+<wire x1="49.745" y1="64.51" x2="49.34" y2="64.915" width="0.2" layer="1"/>
+<wire x1="43.93" y1="63.39" x2="43.93" y2="61.25" width="0.2" layer="1"/>
+<wire x1="43.93" y1="61.25" x2="41.855" y2="59.175" width="0.2" layer="1"/>
+<wire x1="34.1" y1="64.855" x2="30.215" y2="64.855" width="0.2" layer="1"/>
+<wire x1="30.215" y1="64.855" x2="28.69" y2="63.33" width="0.2" layer="1"/>
+<wire x1="26.615" y1="59.115" x2="22.07" y2="59.115" width="0.2" layer="1"/>
+<wire x1="22.07" y1="59.115" x2="19.265" y2="61.92" width="0.2" layer="1"/>
+<wire x1="34.1" y1="64.855" x2="34.53" y2="64.425" width="0.2" layer="1"/>
+<wire x1="28.69" y1="63.33" x2="28.69" y2="61.19" width="0.2" layer="1"/>
+<wire x1="28.69" y1="61.19" x2="26.615" y2="59.115" width="0.2" layer="1"/>
+<wire x1="18.885" y1="64.945" x2="15" y2="64.945" width="0.2" layer="1"/>
+<wire x1="15" y1="64.945" x2="13.475" y2="63.42" width="0.2" layer="1"/>
+<wire x1="11.4" y1="59.205" x2="6.855" y2="59.205" width="0.2" layer="1"/>
+<wire x1="18.885" y1="64.945" x2="19.315" y2="64.515" width="0.2" layer="1"/>
+<wire x1="13.475" y1="63.42" x2="13.475" y2="61.28" width="0.2" layer="1"/>
+<wire x1="13.475" y1="61.28" x2="11.4" y2="59.205" width="0.2" layer="1"/>
+<wire x1="49.745" y1="64.51" x2="49.745" y2="63.5" width="0.2" layer="1"/>
+<wire x1="49.745" y1="61.865" x2="49.745" y2="63.5" width="0.2" layer="1"/>
+<wire x1="34.505" y1="61.98" x2="34.505" y2="63.5" width="0.2" layer="1"/>
+<wire x1="37.31" y1="59.175" x2="34.505" y2="61.98" width="0.2" layer="1"/>
+<wire x1="34.53" y1="64.425" x2="34.53" y2="63.525" width="0.2" layer="1"/>
+<wire x1="34.53" y1="63.525" x2="34.505" y2="63.5" width="0.2" layer="1"/>
+<wire x1="19.265" y1="61.92" x2="19.265" y2="63.5" width="0.2" layer="1"/>
+<wire x1="19.315" y1="64.515" x2="19.315" y2="63.55" width="0.2" layer="1"/>
+<wire x1="19.315" y1="63.55" x2="19.265" y2="63.5" width="0.2" layer="1"/>
+<wire x1="4.025" y1="62.035" x2="4.025" y2="63.5" width="0.2" layer="1"/>
+<wire x1="6.855" y1="59.205" x2="4.025" y2="62.035" width="0.2" layer="1"/>
+<wire x1="64.555" y1="36.825" x2="60.67" y2="36.825" width="0.2" layer="1"/>
+<wire x1="60.67" y1="36.825" x2="59.145" y2="35.3" width="0.2" layer="1"/>
+<wire x1="57.07" y1="31.085" x2="52.525" y2="31.085" width="0.2" layer="1"/>
+<wire x1="52.525" y1="31.085" x2="49.745" y2="33.865" width="0.2" layer="1"/>
+<wire x1="64.985" y1="36.395" x2="64.555" y2="36.825" width="0.2" layer="1"/>
+<wire x1="59.145" y1="35.3" x2="59.145" y2="33.16" width="0.2" layer="1"/>
+<wire x1="59.145" y1="33.16" x2="57.07" y2="31.085" width="0.2" layer="1"/>
+<wire x1="49.34" y1="36.915" x2="45.455" y2="36.915" width="0.2" layer="1"/>
+<wire x1="45.455" y1="36.915" x2="43.93" y2="35.39" width="0.2" layer="1"/>
+<wire x1="41.855" y1="31.175" x2="37.31" y2="31.175" width="0.2" layer="1"/>
+<wire x1="49.34" y1="36.915" x2="49.745" y2="36.51" width="0.2" layer="1"/>
+<wire x1="43.93" y1="35.39" x2="43.93" y2="33.25" width="0.2" layer="1"/>
+<wire x1="43.93" y1="33.25" x2="41.855" y2="31.175" width="0.2" layer="1"/>
+<wire x1="34.1" y1="36.855" x2="30.215" y2="36.855" width="0.2" layer="1"/>
+<wire x1="30.215" y1="36.855" x2="28.69" y2="35.33" width="0.2" layer="1"/>
+<wire x1="26.615" y1="31.115" x2="22.07" y2="31.115" width="0.2" layer="1"/>
+<wire x1="22.07" y1="31.115" x2="19.265" y2="33.92" width="0.2" layer="1"/>
+<wire x1="34.1" y1="36.855" x2="34.53" y2="36.425" width="0.2" layer="1"/>
+<wire x1="28.69" y1="35.33" x2="28.69" y2="33.19" width="0.2" layer="1"/>
+<wire x1="28.69" y1="33.19" x2="26.615" y2="31.115" width="0.2" layer="1"/>
+<wire x1="18.885" y1="36.945" x2="15" y2="36.945" width="0.2" layer="1"/>
+<wire x1="15" y1="36.945" x2="13.475" y2="35.42" width="0.2" layer="1"/>
+<wire x1="11.4" y1="31.205" x2="6.855" y2="31.205" width="0.2" layer="1"/>
+<wire x1="18.885" y1="36.945" x2="19.315" y2="36.515" width="0.2" layer="1"/>
+<wire x1="13.475" y1="35.42" x2="13.475" y2="33.28" width="0.2" layer="1"/>
+<wire x1="13.475" y1="33.28" x2="11.4" y2="31.205" width="0.2" layer="1"/>
+<wire x1="37.31" y1="31.175" x2="34.505" y2="33.98" width="0.2" layer="1"/>
+<wire x1="6.855" y1="31.205" x2="4.025" y2="34.035" width="0.2" layer="1"/>
+<wire x1="64.985" y1="35.56" x2="64.985" y2="36.395" width="0.2" layer="1"/>
+<wire x1="49.745" y1="36.51" x2="49.745" y2="35.56" width="0.2" layer="1"/>
+<wire x1="49.745" y1="33.865" x2="49.745" y2="35.56" width="0.2" layer="1"/>
+<wire x1="34.505" y1="33.98" x2="34.505" y2="35.5" width="0.2" layer="1"/>
+<wire x1="34.505" y1="35.5" x2="34.505" y2="35.56" width="0.2" layer="1"/>
+<wire x1="34.53" y1="36.425" x2="34.53" y2="35.525" width="0.2" layer="1"/>
+<wire x1="34.53" y1="35.525" x2="34.505" y2="35.5" width="0.2" layer="1"/>
+<wire x1="19.265" y1="33.92" x2="19.265" y2="35.5" width="0.2" layer="1"/>
+<wire x1="19.265" y1="35.5" x2="19.265" y2="35.56" width="0.2" layer="1"/>
+<wire x1="19.315" y1="36.515" x2="19.315" y2="35.55" width="0.2" layer="1"/>
+<wire x1="19.315" y1="35.55" x2="19.265" y2="35.5" width="0.2" layer="1"/>
+<wire x1="4.025" y1="34.035" x2="4.025" y2="35.56" width="0.2" layer="1"/>
+<wire x1="64.985" y1="35.56" x2="64.985" y2="63.5" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="ANA1">
+<contactref element="J13" pad="7"/>
+</signal>
+<signal name="AGND">
+<contactref element="J13" pad="8"/>
+<contactref element="J12" pad="8"/>
+<contactref element="J11" pad="8"/>
+<contactref element="J10" pad="8"/>
+<contactref element="J9" pad="8"/>
+<contactref element="J8" pad="8"/>
+<contactref element="J7" pad="8"/>
+<contactref element="J6" pad="8"/>
+<contactref element="J5" pad="8"/>
+<contactref element="J4" pad="8"/>
+<wire x1="47.745" y1="63.5" x2="62.985" y2="63.5" width="0" layer="19" extent="1-1"/>
+<wire x1="32.505" y1="63.5" x2="47.745" y2="63.5" width="0" layer="19" extent="1-1"/>
+<wire x1="17.265" y1="63.5" x2="32.505" y2="63.5" width="0" layer="19" extent="1-1"/>
+<wire x1="2.025" y1="63.5" x2="17.265" y2="63.5" width="0" layer="19" extent="1-1"/>
+<wire x1="62.985" y1="35.56" x2="62.985" y2="63.5" width="0" layer="19" extent="1-1"/>
+<wire x1="47.745" y1="35.56" x2="62.985" y2="35.56" width="0" layer="19" extent="1-1"/>
+<wire x1="32.505" y1="35.56" x2="47.745" y2="35.56" width="0" layer="19" extent="1-1"/>
+<wire x1="17.265" y1="35.56" x2="32.505" y2="35.56" width="0" layer="19" extent="1-1"/>
+<wire x1="2.025" y1="35.56" x2="17.265" y2="35.56" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="MA_M3_P">
+<contactref element="J12" pad="1"/>
+<contactref element="J22" pad="6"/>
+<wire x1="54.745" y1="35.56" x2="52.76" y2="40.64" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="MA_M3_N">
+<contactref element="J12" pad="2"/>
+<contactref element="J22" pad="5"/>
+<wire x1="53.745" y1="35.56" x2="51.76" y2="40.64" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="SLO_M3_P">
+<contactref element="J12" pad="3"/>
+<contactref element="J22" pad="4"/>
+<wire x1="52.745" y1="35.56" x2="50.76" y2="40.64" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="SLO_M3_N">
+<contactref element="J12" pad="4"/>
+<contactref element="J22" pad="3"/>
+<wire x1="51.745" y1="35.56" x2="49.76" y2="40.64" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="ANA3">
+<contactref element="J12" pad="7"/>
+</signal>
+<signal name="MA_M5_P">
+<contactref element="J11" pad="1"/>
+<contactref element="J21" pad="6"/>
+<wire x1="39.505" y1="35.56" x2="37.52" y2="40.64" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="MA_M5_N">
+<contactref element="J11" pad="2"/>
+<contactref element="J21" pad="5"/>
+<wire x1="38.505" y1="35.56" x2="36.52" y2="40.64" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="SLO_M5_P">
+<contactref element="J11" pad="3"/>
+<contactref element="J21" pad="4"/>
+<wire x1="37.505" y1="35.56" x2="35.52" y2="40.64" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="SLO_M5_N">
+<contactref element="J11" pad="4"/>
+<contactref element="J21" pad="3"/>
+<wire x1="36.505" y1="35.56" x2="34.52" y2="40.64" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="ANA5">
+<contactref element="J11" pad="7"/>
+</signal>
+<signal name="MA_M7_P">
+<contactref element="J10" pad="1"/>
+<contactref element="J20" pad="6"/>
+<wire x1="24.265" y1="35.56" x2="22.28" y2="40.64" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="MA_M7_N">
+<contactref element="J10" pad="2"/>
+<contactref element="J20" pad="5"/>
+<wire x1="23.265" y1="35.56" x2="21.28" y2="40.64" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="SLO_M7_P">
+<contactref element="J10" pad="3"/>
+<contactref element="J20" pad="4"/>
+<wire x1="22.265" y1="35.56" x2="20.28" y2="40.64" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="SLO_M7_N">
+<contactref element="J10" pad="4"/>
+<contactref element="J20" pad="3"/>
+<wire x1="21.265" y1="35.56" x2="19.28" y2="40.64" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="ANA7">
+<contactref element="J10" pad="7"/>
+</signal>
+<signal name="MA_M9_P">
+<contactref element="J9" pad="1"/>
+<contactref element="J19" pad="6"/>
+<wire x1="9.025" y1="35.56" x2="7.04" y2="40.64" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="MA_M9_N">
+<contactref element="J9" pad="2"/>
+<contactref element="J19" pad="5"/>
+<wire x1="8.025" y1="35.56" x2="6.04" y2="40.64" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="SLO_M9_P">
+<contactref element="J9" pad="3"/>
+<contactref element="J19" pad="4"/>
+<wire x1="7.025" y1="35.56" x2="5.04" y2="40.64" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="SLO_M9_N">
+<contactref element="J9" pad="4"/>
+<contactref element="J19" pad="3"/>
+<wire x1="6.025" y1="35.56" x2="4.04" y2="40.64" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="ANA9">
+<contactref element="J9" pad="7"/>
+</signal>
+<signal name="B_M9_N">
+<contactref element="J19" pad="7"/>
+</signal>
+<signal name="B_M9_P">
+<contactref element="J19" pad="8"/>
+</signal>
+<signal name="A_M9_N">
+<contactref element="J19" pad="9"/>
+</signal>
+<signal name="A_M9_P">
+<contactref element="J19" pad="10"/>
+</signal>
+<signal name="A_M7_P">
+<contactref element="J20" pad="10"/>
+</signal>
+<signal name="A_M7_N">
+<contactref element="J20" pad="9"/>
+</signal>
+<signal name="B_M7_P">
+<contactref element="J20" pad="8"/>
+</signal>
+<signal name="B_M7_N">
+<contactref element="J20" pad="7"/>
+</signal>
+<signal name="A_M5_P">
+<contactref element="J21" pad="10"/>
+</signal>
+<signal name="A_M5_N">
+<contactref element="J21" pad="9"/>
+</signal>
+<signal name="B_M5_P">
+<contactref element="J21" pad="8"/>
+</signal>
+<signal name="B_M5_N">
+<contactref element="J21" pad="7"/>
+</signal>
+<signal name="A_M3_P">
+<contactref element="J22" pad="10"/>
+</signal>
+<signal name="A_M3_N">
+<contactref element="J22" pad="9"/>
+</signal>
+<signal name="B_M3_P">
+<contactref element="J22" pad="8"/>
+</signal>
+<signal name="B_M3_N">
+<contactref element="J22" pad="7"/>
+</signal>
+<signal name="A_M1_P">
+<contactref element="J23" pad="10"/>
+</signal>
+<signal name="A_M1_N">
+<contactref element="J23" pad="9"/>
+</signal>
+<signal name="B_M1_P">
+<contactref element="J23" pad="8"/>
+</signal>
+<signal name="B_M1_N">
+<contactref element="J23" pad="7"/>
+</signal>
+<signal name="5V">
+<contactref element="J23" pad="2"/>
+<contactref element="J22" pad="2"/>
+<contactref element="J21" pad="2"/>
+<contactref element="J20" pad="2"/>
+<contactref element="J19" pad="2"/>
+<contactref element="J18" pad="2"/>
+<contactref element="J17" pad="2"/>
+<contactref element="J16" pad="2"/>
+<contactref element="J15" pad="2"/>
+<contactref element="J14" pad="2"/>
+<wire x1="48.76" y1="68.58" x2="64" y2="68.58" width="0" layer="19" extent="1-1"/>
+<wire x1="33.52" y1="68.58" x2="48.76" y2="68.58" width="0" layer="19" extent="1-1"/>
+<wire x1="18.28" y1="68.58" x2="33.52" y2="68.58" width="0" layer="19" extent="1-1"/>
+<wire x1="3.04" y1="68.58" x2="18.28" y2="68.58" width="0" layer="19" extent="1-1"/>
+<wire x1="64" y1="40.64" x2="64" y2="68.58" width="0" layer="19" extent="1-1"/>
+<wire x1="48.76" y1="40.64" x2="64" y2="40.64" width="0" layer="19" extent="1-1"/>
+<wire x1="33.52" y1="40.64" x2="48.76" y2="40.64" width="0" layer="19" extent="1-1"/>
+<wire x1="18.28" y1="40.64" x2="33.52" y2="40.64" width="0" layer="19" extent="1-1"/>
+<wire x1="3.04" y1="40.64" x2="18.28" y2="40.64" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="ANA2">
+<contactref element="J8" pad="7"/>
+</signal>
+<signal name="SLO_M2_N">
+<contactref element="J8" pad="4"/>
+<contactref element="J18" pad="3"/>
+<wire x1="66.985" y1="63.5" x2="65" y2="68.58" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="SLO_M2_P">
+<contactref element="J8" pad="3"/>
+<contactref element="J18" pad="4"/>
+<wire x1="67.985" y1="63.5" x2="66" y2="68.58" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="MA_M2_N">
+<contactref element="J8" pad="2"/>
+<contactref element="J18" pad="5"/>
+<wire x1="68.985" y1="63.5" x2="67" y2="68.58" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="MA_M2_P">
+<contactref element="J8" pad="1"/>
+<contactref element="J18" pad="6"/>
+<wire x1="69.985" y1="63.5" x2="68" y2="68.58" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="ANA4">
+<contactref element="J7" pad="7"/>
+</signal>
+<signal name="SLO_M4_N">
+<contactref element="J7" pad="4"/>
+<contactref element="J17" pad="3"/>
+<wire x1="51.745" y1="63.5" x2="49.76" y2="68.58" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="SLO_M4_P">
+<contactref element="J7" pad="3"/>
+<contactref element="J17" pad="4"/>
+<wire x1="52.745" y1="63.5" x2="50.76" y2="68.58" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="MA_M4_N">
+<contactref element="J7" pad="2"/>
+<contactref element="J17" pad="5"/>
+<wire x1="53.745" y1="63.5" x2="51.76" y2="68.58" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="MA_M4_P">
+<contactref element="J7" pad="1"/>
+<contactref element="J17" pad="6"/>
+<wire x1="54.745" y1="63.5" x2="52.76" y2="68.58" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="MA_M6_P">
+<contactref element="J6" pad="1"/>
+<contactref element="J16" pad="6"/>
+<wire x1="39.505" y1="63.5" x2="37.52" y2="68.58" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="MA_M6_N">
+<contactref element="J6" pad="2"/>
+<contactref element="J16" pad="5"/>
+<wire x1="38.505" y1="63.5" x2="36.52" y2="68.58" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="SLO_M6_P">
+<contactref element="J6" pad="3"/>
+<contactref element="J16" pad="4"/>
+<wire x1="37.505" y1="63.5" x2="35.52" y2="68.58" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="SLO_M6_N">
+<contactref element="J6" pad="4"/>
+<contactref element="J16" pad="3"/>
+<wire x1="36.505" y1="63.5" x2="34.52" y2="68.58" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="ANA6">
+<contactref element="J6" pad="7"/>
+</signal>
+<signal name="ANA8">
+<contactref element="J5" pad="7"/>
+</signal>
+<signal name="SLO_M8_N">
+<contactref element="J5" pad="4"/>
+<contactref element="J15" pad="3"/>
+<wire x1="21.265" y1="63.5" x2="19.28" y2="68.58" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="SLO_M8_P">
+<contactref element="J5" pad="3"/>
+<contactref element="J15" pad="4"/>
+<wire x1="22.265" y1="63.5" x2="20.28" y2="68.58" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="MA_M8_N">
+<contactref element="J5" pad="2"/>
+<contactref element="J15" pad="5"/>
+<wire x1="23.265" y1="63.5" x2="21.28" y2="68.58" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="MA_M8_P">
+<contactref element="J5" pad="1"/>
+<contactref element="J15" pad="6"/>
+<wire x1="24.265" y1="63.5" x2="22.28" y2="68.58" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="ANA10">
+<contactref element="J4" pad="7"/>
+</signal>
+<signal name="SLO_M10_N">
+<contactref element="J4" pad="4"/>
+<contactref element="J14" pad="3"/>
+<wire x1="6.025" y1="63.5" x2="4.04" y2="68.58" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="SLO_M10_P">
+<contactref element="J4" pad="3"/>
+<contactref element="J14" pad="4"/>
+<wire x1="7.025" y1="63.5" x2="5.04" y2="68.58" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="MA_M10_N">
+<contactref element="J4" pad="2"/>
+<contactref element="J14" pad="5"/>
+<wire x1="8.025" y1="63.5" x2="6.04" y2="68.58" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="MA_M10_P">
+<contactref element="J4" pad="1"/>
+<contactref element="J14" pad="6"/>
+<wire x1="9.025" y1="63.5" x2="7.04" y2="68.58" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="B_M2_N">
+<contactref element="J18" pad="7"/>
+</signal>
+<signal name="B_M2_P">
+<contactref element="J18" pad="8"/>
+</signal>
+<signal name="A_M2_N">
+<contactref element="J18" pad="9"/>
+</signal>
+<signal name="A_M2_P">
+<contactref element="J18" pad="10"/>
+</signal>
+<signal name="B_M4_N">
+<contactref element="J17" pad="7"/>
+</signal>
+<signal name="B_M4_P">
+<contactref element="J17" pad="8"/>
+</signal>
+<signal name="A_M4_N">
+<contactref element="J17" pad="9"/>
+</signal>
+<signal name="A_M4_P">
+<contactref element="J17" pad="10"/>
+</signal>
+<signal name="B_M6_N">
+<contactref element="J16" pad="7"/>
+</signal>
+<signal name="B_M6_P">
+<contactref element="J16" pad="8"/>
+</signal>
+<signal name="A_M6_N">
+<contactref element="J16" pad="9"/>
+</signal>
+<signal name="A_M6_P">
+<contactref element="J16" pad="10"/>
+</signal>
+<signal name="B_M8_N">
+<contactref element="J15" pad="7"/>
+</signal>
+<signal name="B_M8_P">
+<contactref element="J15" pad="8"/>
+</signal>
+<signal name="A_M8_N">
+<contactref element="J15" pad="9"/>
+</signal>
+<signal name="A_M8_P">
+<contactref element="J15" pad="10"/>
+</signal>
+<signal name="B_M10_N">
+<contactref element="J14" pad="7"/>
+</signal>
+<signal name="B_M10_P">
+<contactref element="J14" pad="8"/>
+</signal>
+<signal name="A_M10_N">
+<contactref element="J14" pad="9"/>
+</signal>
+<signal name="A_M10_P">
+<contactref element="J14" pad="10"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
