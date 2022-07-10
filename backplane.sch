@@ -4766,8 +4766,8 @@ Source: &lt;a href="https://datasheet.datasheetarchive.com/originals/distributor
 </sheet>
 <sheet>
 <plain>
-<text x="66.04" y="215.9" size="10.16" layer="91">ADD 0.1uF Capacitors to all</text>
-<text x="10.16" y="12.7" size="10.16" layer="91">ADD 0.1uF Capacitors to all</text>
+<text x="10.16" y="20.32" size="10.16" layer="91">Connect G Pins</text>
+<text x="10.16" y="5.08" size="10.16" layer="91">ADD 0.1uF Capacitors to all</text>
 </plain>
 <instances>
 <instance part="FRAME4" gate="G$1" x="0" y="0" smashed="yes"/>
