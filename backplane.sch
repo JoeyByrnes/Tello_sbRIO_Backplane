@@ -9226,8 +9226,6 @@ Source: AVX .. aphvc.pdf</description>
 </sheet>
 <sheet>
 <plain>
-<text x="10.16" y="20.32" size="10.16" layer="91">Connect G Pins</text>
-<text x="10.16" y="5.08" size="10.16" layer="91">ADD 0.1uF Capacitors to all</text>
 </plain>
 <instances>
 <instance part="FRAME4" gate="G$1" x="0" y="0" smashed="yes"/>
@@ -9565,6 +9563,56 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="53.34" y1="175.26" x2="53.34" y2="177.8" width="0.1524" layer="91"/>
 <label x="53.34" y="177.8" size="0.889" layer="95" xref="yes"/>
 </segment>
+<segment>
+<pinref part="U4" gate="A" pin="G"/>
+<wire x1="177.8" y1="149.86" x2="175.26" y2="149.86" width="0.1524" layer="91"/>
+<label x="175.26" y="149.86" size="0.889" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U5" gate="A" pin="G"/>
+<wire x1="231.14" y1="149.86" x2="228.6" y2="149.86" width="0.1524" layer="91"/>
+<label x="228.6" y="149.86" size="0.889" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U3" gate="A" pin="G"/>
+<wire x1="124.46" y1="149.86" x2="121.92" y2="149.86" width="0.1524" layer="91"/>
+<label x="121.92" y="149.86" size="0.889" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U2" gate="A" pin="G"/>
+<wire x1="71.12" y1="149.86" x2="68.58" y2="149.86" width="0.1524" layer="91"/>
+<label x="68.58" y="149.86" size="0.889" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U1" gate="A" pin="G"/>
+<wire x1="20.32" y1="149.86" x2="17.78" y2="149.86" width="0.1524" layer="91"/>
+<label x="17.78" y="149.86" size="0.889" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U6" gate="A" pin="G"/>
+<wire x1="17.78" y1="58.42" x2="15.24" y2="58.42" width="0.1524" layer="91"/>
+<label x="15.24" y="58.42" size="0.889" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U7" gate="A" pin="G"/>
+<wire x1="68.58" y1="58.42" x2="66.04" y2="58.42" width="0.1524" layer="91"/>
+<label x="66.04" y="58.42" size="0.889" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U8" gate="A" pin="G"/>
+<wire x1="121.92" y1="58.42" x2="119.38" y2="58.42" width="0.1524" layer="91"/>
+<label x="119.38" y="58.42" size="0.889" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U9" gate="A" pin="G"/>
+<wire x1="175.26" y1="58.42" x2="172.72" y2="58.42" width="0.1524" layer="91"/>
+<label x="172.72" y="58.42" size="0.889" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U10" gate="A" pin="G"/>
+<wire x1="233.68" y1="58.42" x2="231.14" y2="58.42" width="0.1524" layer="91"/>
+<label x="231.14" y="58.42" size="0.889" layer="95" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="MA_M1_N" class="1">
 <segment>
@@ -9590,12 +9638,6 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="RN10" gate="G$1" pin="2"/>
 <wire x1="246.38" y1="91.44" x2="246.38" y2="88.9" width="0.1524" layer="91"/>
 <label x="246.38" y="88.9" size="0.889" layer="95" rot="R270" xref="yes"/>
-</segment>
-</net>
-<net name="N$13" class="0">
-<segment>
-<pinref part="U10" gate="A" pin="G"/>
-<wire x1="233.68" y1="58.42" x2="231.14" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SLO_M1" class="0">
@@ -9670,12 +9712,6 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="U9" gate="A" pin="2A"/>
 <wire x1="175.26" y1="53.34" x2="172.72" y2="53.34" width="0.1524" layer="91"/>
 <label x="172.72" y="53.34" size="0.889" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="N$30" class="0">
-<segment>
-<pinref part="U9" gate="A" pin="G"/>
-<wire x1="175.26" y1="58.42" x2="172.72" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SLO_M3_P" class="1">
@@ -9776,12 +9812,6 @@ Source: AVX .. aphvc.pdf</description>
 <label x="134.62" y="88.9" size="0.889" layer="95" rot="R270" xref="yes"/>
 </segment>
 </net>
-<net name="N$44" class="0">
-<segment>
-<pinref part="U8" gate="A" pin="G"/>
-<wire x1="121.92" y1="58.42" x2="119.38" y2="58.42" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="SLO_M5" class="0">
 <segment>
 <pinref part="U8" gate="A" pin="1Y"/>
@@ -9876,12 +9906,6 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="RN7" gate="G$1" pin="2"/>
 <wire x1="81.28" y1="91.44" x2="81.28" y2="88.9" width="0.1524" layer="91"/>
 <label x="81.28" y="88.9" size="0.889" layer="95" rot="R270" xref="yes"/>
-</segment>
-</net>
-<net name="N$60" class="0">
-<segment>
-<pinref part="U7" gate="A" pin="G"/>
-<wire x1="68.58" y1="58.42" x2="66.04" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SLO_M7" class="0">
@@ -9994,12 +10018,6 @@ Source: AVX .. aphvc.pdf</description>
 <label x="30.48" y="88.9" size="0.889" layer="95" rot="R270" xref="yes"/>
 </segment>
 </net>
-<net name="N$76" class="0">
-<segment>
-<pinref part="U6" gate="A" pin="G"/>
-<wire x1="17.78" y1="58.42" x2="15.24" y2="58.42" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="SLO_M9" class="0">
 <segment>
 <pinref part="U6" gate="A" pin="1Y"/>
@@ -10108,12 +10126,6 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="RN5" gate="G$1" pin="2"/>
 <wire x1="243.84" y1="180.34" x2="243.84" y2="177.8" width="0.1524" layer="91"/>
 <label x="243.84" y="177.8" size="0.889" layer="95" rot="R270" xref="yes"/>
-</segment>
-</net>
-<net name="N$92" class="0">
-<segment>
-<pinref part="U5" gate="A" pin="G"/>
-<wire x1="231.14" y1="149.86" x2="228.6" y2="149.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SLO_M2" class="0">
@@ -10226,12 +10238,6 @@ Source: AVX .. aphvc.pdf</description>
 <label x="190.5" y="177.8" size="0.889" layer="95" rot="R270" xref="yes"/>
 </segment>
 </net>
-<net name="N$108" class="0">
-<segment>
-<pinref part="U4" gate="A" pin="G"/>
-<wire x1="177.8" y1="149.86" x2="175.26" y2="149.86" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="SLO_M4" class="0">
 <segment>
 <pinref part="U4" gate="A" pin="1Y"/>
@@ -10333,12 +10339,6 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="RN3" gate="G$1" pin="2"/>
 <wire x1="137.16" y1="180.34" x2="137.16" y2="177.8" width="0.1524" layer="91"/>
 <label x="137.16" y="177.8" size="0.889" layer="95" rot="R270" xref="yes"/>
-</segment>
-</net>
-<net name="N$124" class="0">
-<segment>
-<pinref part="U3" gate="A" pin="G"/>
-<wire x1="124.46" y1="149.86" x2="121.92" y2="149.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SLO_M6" class="0">
@@ -10449,12 +10449,6 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="RN2" gate="G$1" pin="2"/>
 <wire x1="83.82" y1="180.34" x2="83.82" y2="177.8" width="0.1524" layer="91"/>
 <label x="83.82" y="177.8" size="0.889" layer="95" rot="R270" xref="yes"/>
-</segment>
-</net>
-<net name="N$140" class="0">
-<segment>
-<pinref part="U2" gate="A" pin="G"/>
-<wire x1="71.12" y1="149.86" x2="68.58" y2="149.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SLO_M8" class="0">
@@ -10677,12 +10671,6 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="RN1" gate="G$1" pin="2"/>
 <wire x1="33.02" y1="180.34" x2="33.02" y2="177.8" width="0.1524" layer="91"/>
 <label x="33.02" y="177.8" size="0.889" layer="95" rot="R270" xref="yes"/>
-</segment>
-</net>
-<net name="N$156" class="0">
-<segment>
-<pinref part="U1" gate="A" pin="G"/>
-<wire x1="20.32" y1="149.86" x2="17.78" y2="149.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SLO_M10" class="0">
