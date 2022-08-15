@@ -5390,61 +5390,61 @@ design rules under a new name.</description>
 <attribute name="MFR_NAME" value="Molex Connector Corporation" x="70.59" y="3.81" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="75.5938" y="0.635" size="1.27" layer="27" ratio="6" rot="SR0"/>
 </element>
-<element name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="" x="72.91" y="49.995" smashed="yes" rot="R270">
+<element name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF" x="72.91" y="49.995" smashed="yes" rot="R270">
 <attribute name="NAME" x="73.545" y="50.63" size="1.27" layer="25" rot="R270"/>
 <attribute name="POPULARITY" value="73" x="72.91" y="49.995" size="6" layer="27" rot="R270" display="off"/>
 <attribute name="SPICEPREFIX" value="C" x="72.91" y="49.995" size="6" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="71.005" y="50.63" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="" x="59.185" y="49.785" smashed="yes" rot="R270">
+<element name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF" x="59.185" y="49.785" smashed="yes" rot="R270">
 <attribute name="NAME" x="59.82" y="50.42" size="1.27" layer="25" rot="R270"/>
 <attribute name="POPULARITY" value="73" x="59.185" y="49.785" size="6" layer="27" rot="R270" display="off"/>
 <attribute name="SPICEPREFIX" value="C" x="59.185" y="49.785" size="6" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="57.28" y="50.42" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="C3" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="" x="45.405" y="49.725" smashed="yes" rot="R270">
+<element name="C3" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF" x="45.405" y="49.725" smashed="yes" rot="R270">
 <attribute name="NAME" x="46.04" y="50.36" size="1.27" layer="25" rot="R270"/>
 <attribute name="POPULARITY" value="73" x="45.405" y="49.725" size="6" layer="27" rot="R270" display="off"/>
 <attribute name="SPICEPREFIX" value="C" x="45.405" y="49.725" size="6" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="43.5" y="50.36" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="C4" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="" x="31.58" y="49.855" smashed="yes" rot="R270">
+<element name="C4" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF" x="31.58" y="49.855" smashed="yes" rot="R270">
 <attribute name="NAME" x="32.215" y="50.49" size="1.27" layer="25" rot="R270"/>
 <attribute name="POPULARITY" value="73" x="31.58" y="49.855" size="6" layer="27" rot="R270" display="off"/>
 <attribute name="SPICEPREFIX" value="C" x="31.58" y="49.855" size="6" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="29.675" y="50.49" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="C5" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="" x="17.96" y="49.85" smashed="yes" rot="R270">
+<element name="C5" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF" x="17.96" y="49.85" smashed="yes" rot="R270">
 <attribute name="NAME" x="18.595" y="50.485" size="1.27" layer="25" rot="R270"/>
 <attribute name="POPULARITY" value="73" x="17.96" y="49.85" size="6" layer="27" rot="R270" display="off"/>
 <attribute name="SPICEPREFIX" value="C" x="17.96" y="49.85" size="6" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="16.055" y="50.485" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="C6" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="" x="73" y="77.5" smashed="yes" rot="R270">
+<element name="C6" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF" x="73" y="77.5" smashed="yes" rot="R270">
 <attribute name="NAME" x="73.635" y="78.135" size="1.27" layer="25" rot="R270"/>
 <attribute name="POPULARITY" value="73" x="73" y="77.5" size="6" layer="27" rot="R270" display="off"/>
 <attribute name="SPICEPREFIX" value="C" x="73" y="77.5" size="6" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="71.095" y="78.135" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="C7" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="" x="59.15" y="78.285" smashed="yes" rot="R270">
+<element name="C7" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF" x="59.15" y="78.285" smashed="yes" rot="R270">
 <attribute name="NAME" x="59.785" y="78.92" size="1.27" layer="25" rot="R270"/>
 <attribute name="POPULARITY" value="73" x="59.15" y="78.285" size="6" layer="27" rot="R270" display="off"/>
 <attribute name="SPICEPREFIX" value="C" x="59.15" y="78.285" size="6" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="57.245" y="78.92" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="C8" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="" x="45.38" y="78.155" smashed="yes" rot="R270">
+<element name="C8" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF" x="45.38" y="78.155" smashed="yes" rot="R270">
 <attribute name="NAME" x="46.015" y="78.79" size="1.27" layer="25" rot="R270"/>
 <attribute name="POPULARITY" value="73" x="45.38" y="78.155" size="6" layer="27" rot="R270" display="off"/>
 <attribute name="SPICEPREFIX" value="C" x="45.38" y="78.155" size="6" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="43.475" y="78.79" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="C9" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="" x="31.575" y="78.21" smashed="yes" rot="R270">
+<element name="C9" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF" x="31.575" y="78.21" smashed="yes" rot="R270">
 <attribute name="NAME" x="32.21" y="78.845" size="1.27" layer="25" rot="R270"/>
 <attribute name="POPULARITY" value="73" x="31.575" y="78.21" size="6" layer="27" rot="R270" display="off"/>
 <attribute name="SPICEPREFIX" value="C" x="31.575" y="78.21" size="6" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="29.67" y="78.845" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="C10" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="" x="17.765" y="78.245" smashed="yes" rot="R270">
+<element name="C10" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF" x="17.765" y="78.245" smashed="yes" rot="R270">
 <attribute name="NAME" x="18.4" y="78.88" size="1.27" layer="25" rot="R270"/>
 <attribute name="POPULARITY" value="73" x="17.765" y="78.245" size="6" layer="27" rot="R270" display="off"/>
 <attribute name="SPICEPREFIX" value="C" x="17.765" y="78.245" size="6" layer="27" rot="R270" display="off"/>
@@ -6603,7 +6603,8 @@ design rules under a new name.</description>
 <wire x1="71.84" y1="3.81" x2="71.84" y2="27.66" width="0.1524" layer="1"/>
 <wire x1="65.735" y1="33.765" x2="65.735" y2="35.56" width="0.1524" layer="1"/>
 <wire x1="71.84" y1="27.66" x2="65.735" y2="33.765" width="0.1524" layer="1"/>
-<wire x1="38.255" y1="35.56" x2="38.28" y2="35.525" width="0" layer="19" extent="1-1"/>
+<wire x1="38.255" y1="35.56" x2="38.28" y2="35.535" width="0.1524" layer="1"/>
+<wire x1="38.28" y1="35.535" x2="38.28" y2="35.525" width="0.1524" layer="1"/>
 </signal>
 <signal name="ESTP-">
 <contactref element="J13" pad="6"/>
@@ -6661,9 +6662,9 @@ design rules under a new name.</description>
 <wire x1="6.865" y1="65.135" x2="6.0922" y2="64.3622" width="0.1524" layer="16"/>
 <wire x1="6.0922" y1="64.3622" x2="6.0922" y2="38.6578" width="0.1524" layer="16"/>
 <wire x1="9.775" y1="63.5" x2="9.775" y2="64.545" width="0.1524" layer="1"/>
-<wire x1="9.775" y1="64.545" x2="9.54" y2="64.78" width="0.1524" layer="1"/>
-<wire x1="9.54" y1="64.78" x2="7.22" y2="64.78" width="0.1524" layer="1"/>
-<wire x1="7.22" y1="64.78" x2="6.865" y2="65.135" width="0.1524" layer="1"/>
+<wire x1="9.775" y1="64.545" x2="9.64" y2="64.68" width="0.1524" layer="1"/>
+<wire x1="9.64" y1="64.68" x2="7.32" y2="64.68" width="0.1524" layer="1"/>
+<wire x1="7.32" y1="64.68" x2="6.865" y2="65.135" width="0.1524" layer="1"/>
 <wire x1="9.75" y1="36.98" x2="10.48" y2="36.25" width="0.1524" layer="16"/>
 <wire x1="10.48" y1="36.25" x2="11.25" y2="36.25" width="0.1524" layer="16"/>
 <wire x1="11.25" y1="36.25" x2="12" y2="37" width="0.1524" layer="16"/>
@@ -10248,10 +10249,10 @@ design rules under a new name.</description>
 <wire x1="24.1554" y1="93.575" x2="23.5304" y2="94.2" width="0.1524" layer="16"/>
 <wire x1="23.5304" y1="94.2" x2="23.5" y2="94.2" width="0.1524" layer="16"/>
 <via x="23.5" y="94.2" extent="1-16" drill="0.3"/>
-<wire x1="23.5" y1="94.2" x2="11.8" y2="105.9" width="0.635" layer="1"/>
-<wire x1="11.8" y1="105.9" x2="11.8" y2="122" width="0.635" layer="1"/>
+<wire x1="23.5" y1="94.2" x2="11.695" y2="106.005" width="0.635" layer="1"/>
+<wire x1="11.695" y1="121.22" x2="11.695" y2="106.005" width="0.635" layer="1"/>
 <contactref element="J26" pad="1"/>
-<wire x1="11.8" y1="122" x2="11.695" y2="121.540009375" width="0" layer="19" extent="1-1"/>
+<wire x1="11.695" y1="121.540009375" x2="11.695" y2="121.22" width="0.1524" layer="1"/>
 </signal>
 <signal name="5V_SBRIO">
 <contactref element="J24" pad="F10"/>
@@ -10614,6 +10615,138 @@ design rules under a new name.</description>
 <mfgpreviewcolor name="coppercolor" color="0xFFD6D6D6"/>
 <mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
 </mfgpreviewcolors>
+<errors>
+<approved hash="21,19,f5b7f7b5f7b5f5b7"/>
+<approved hash="21,19,e5b9e7bbe7bbe5b9"/>
+<approved hash="21,19,f1c7f3c5f3c5f1c7"/>
+<approved hash="21,19,c1c7c3c5c3c5c1c7"/>
+<approved hash="21,19,f133f331f331f133"/>
+<approved hash="21,19,c803ca01ca01c803"/>
+<approved hash="21,19,f5bbf7b9f7b9f5bb"/>
+<approved hash="21,19,7ef47d078307ff0a"/>
+<approved hash="21,19,e5b7e7b5e7b5e5b7"/>
+<approved hash="5,1,269b25334bec104f"/>
+<approved hash="5,1,a9a7b3e780c16490"/>
+<approved hash="5,1,ad9eaa40f83771be"/>
+<approved hash="5,1,57579dd22b18fbc0"/>
+<approved hash="5,1,ea1133f23ca08da7"/>
+<approved hash="5,1,ebb0f5e1f65debea"/>
+<approved hash="5,1,f3ddedaef02cf21f"/>
+<approved hash="5,1,9b269fd5e9a983b4"/>
+<approved hash="5,1,97e78c81b9a75a50"/>
+<approved hash="5,1,dc18c3f0fc5f07fd"/>
+<approved hash="5,1,e4dedcd12eb6e6a4"/>
+<approved hash="5,1,2ffdc1e4c9f58aea"/>
+<approved hash="5,1,23ee02fc1cdc21ee"/>
+<approved hash="5,1,967b17fbb37c6afc"/>
+<approved hash="5,1,e9ecd7e44c8b92c5"/>
+<approved hash="5,1,92b16708e01ff94f"/>
+<approved hash="5,1,1084b41120194345"/>
+<approved hash="5,1,a17b42d162689c52"/>
+<approved hash="5,1,c015afab5d9341ab"/>
+<approved hash="5,1,b8c44559ac638d3c"/>
+<approved hash="5,1,2e1154f354ca8b6d"/>
+<approved hash="5,1,14603046e34a736e"/>
+<approved hash="5,1,b46e58c7a29e3060"/>
+<approved hash="5,1,6f936fb2ca7eca51"/>
+<approved hash="5,1,947c4569af63a2b4"/>
+<approved hash="5,1,acf8ebd076de940b"/>
+<approved hash="5,1,9968f95125f339db"/>
+<approved hash="5,1,90cc997fa4885086"/>
+<approved hash="5,1,444ca6bc7e92b46a"/>
+<approved hash="5,1,5065455bf69780eb"/>
+<approved hash="5,1,21411393c9ca8956"/>
+<approved hash="5,1,82384561af6bb4f0"/>
+<approved hash="5,1,07a33e298613ddaf"/>
+<approved hash="5,1,aa54a1fe05600538"/>
+<approved hash="5,1,b6804561a85b8778"/>
+<approved hash="5,16,6a3b3103f6f1afe4"/>
+<approved hash="5,16,eacb555381dd0117"/>
+<approved hash="5,16,91c6344daa7a6992"/>
+<approved hash="5,16,cdd63383dfee792e"/>
+<approved hash="5,16,c36a8d902df2975d"/>
+<approved hash="5,16,65881665517706a7"/>
+<approved hash="5,16,c8194d52b6328700"/>
+<approved hash="5,16,734803ae782ccd26"/>
+<approved hash="5,16,7f0efaf9c5b82ae1"/>
+<approved hash="5,16,b4f78f140802ef4d"/>
+<approved hash="5,16,c0f329caa6c040f2"/>
+<approved hash="5,16,f97f889f2a4a2633"/>
+<approved hash="5,16,770484da4abe157d"/>
+<approved hash="5,16,1249db4189b168e3"/>
+<approved hash="5,16,fa3762660feb17e8"/>
+<approved hash="5,16,fa3762660feb17e8"/>
+<approved hash="4,1,0876ec33c86c9461"/>
+<approved hash="4,1,2858cc3f087c943d"/>
+<approved hash="4,1,dde8e65490c5279c"/>
+<approved hash="4,1,9154aed706d0b6a4"/>
+<approved hash="4,1,e40a7e91174b3b7c"/>
+<approved hash="4,1,7ae5eaf253e52ec3"/>
+<approved hash="4,1,7a25a400beb596c0"/>
+<approved hash="4,1,6e1b28679a663e91"/>
+<approved hash="4,1,5bf080daad8e7ed2"/>
+<approved hash="4,1,9b0f93f3e2981d94"/>
+<approved hash="4,1,f272780e460bc42b"/>
+<approved hash="4,1,9ea47512a3c7be21"/>
+<approved hash="4,1,a6a9f975ab271670"/>
+<approved hash="4,1,a7a73be077540622"/>
+<approved hash="4,1,68cb402f42811c4a"/>
+<approved hash="4,1,d2418a7b254170a1"/>
+<approved hash="4,1,6111e5cdeceb6779"/>
+<approved hash="4,1,acfefa8234bcecc9"/>
+<approved hash="4,1,13257edabde36c1e"/>
+<approved hash="4,1,1116a5e46e204c20"/>
+<approved hash="4,1,9b7f4e031679b77b"/>
+<approved hash="4,2,5bf080daad8e7ed2"/>
+<approved hash="4,2,9b0f93f3e2981d94"/>
+<approved hash="4,2,f272780e460bc42b"/>
+<approved hash="4,2,68cb402f42811c4a"/>
+<approved hash="4,2,d2418a7b254170a1"/>
+<approved hash="4,2,6111e5cdeceb6779"/>
+<approved hash="4,2,1116a5e46e204c20"/>
+<approved hash="4,2,9b7f4e031679b77b"/>
+<approved hash="4,15,5bf080daad8e7ed2"/>
+<approved hash="4,15,9b0f93f3e2981d94"/>
+<approved hash="4,15,f272780e460bc42b"/>
+<approved hash="4,15,68cb402f42811c4a"/>
+<approved hash="4,15,d2418a7b254170a1"/>
+<approved hash="4,15,6111e5cdeceb6779"/>
+<approved hash="4,15,1116a5e46e204c20"/>
+<approved hash="4,15,9b7f4e031679b77b"/>
+<approved hash="4,16,e40a7e91174b3b7c"/>
+<approved hash="4,16,7ae5eaf253e52ec3"/>
+<approved hash="4,16,7a25a400beb596c0"/>
+<approved hash="4,16,6e1b28679a663e91"/>
+<approved hash="4,16,5bf080daad8e7ed2"/>
+<approved hash="4,16,9b0f93f3e2981d94"/>
+<approved hash="4,16,f272780e460bc42b"/>
+<approved hash="4,16,9ea47512a3c7be21"/>
+<approved hash="4,16,a6a9f975ab271670"/>
+<approved hash="4,16,a7a73be077540622"/>
+<approved hash="4,16,68cb402f42811c4a"/>
+<approved hash="4,16,d2418a7b254170a1"/>
+<approved hash="4,16,6111e5cdeceb6779"/>
+<approved hash="4,16,acfefa8234bcecc9"/>
+<approved hash="4,16,13257edabde36c1e"/>
+<approved hash="4,16,1116a5e46e204c20"/>
+<approved hash="4,16,9b7f4e031679b77b"/>
+<approved hash="7,39,381580e519508fea"/>
+<approved hash="7,39,fee8bfba07563bd5"/>
+<approved hash="7,39,6224642bb06bb25d"/>
+<approved hash="7,39,fd298dddb572bbd5"/>
+<approved hash="7,39,2305590938bca0a8"/>
+<approved hash="7,39,d386d588018903bf"/>
+<approved hash="7,39,61f867eab02cb1dd"/>
+<approved hash="7,39,a48323d453f032b9"/>
+<approved hash="7,39,cc8a0dddb534bbd5"/>
+<approved hash="7,39,80fd3bee0cb49deb"/>
+<approved hash="19,1,bec5abbb7958d291"/>
+<approved hash="19,1,1ce725a865d7248a"/>
+<approved hash="19,16,2c37dc595f4b8db6"/>
+<approved hash="19,16,95cc08e073cb87b2"/>
+<approved hash="19,16,f6567774c59b2030"/>
+<approved hash="19,16,cbbe5187046d49f5"/>
+</errors>
 </board>
 </drawing>
 <compatibility>
